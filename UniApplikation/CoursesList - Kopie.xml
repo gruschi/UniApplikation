@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<CoursesList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Listenbezeichner>Kursliste</Listenbezeichner>
+  <CoursesArray>
+    <CourseObjekt>
+      <Name>WMP1</Name>
+      <Lecturer>Prof1</Lecturer>
+      <Places>45</Places>
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WMP2</Name>
+      <Lecturer>Prof3</Lecturer>
+      <Places>100</Places>
+    </CourseObjekt>
+  </CoursesArray>
+</CoursesList>
