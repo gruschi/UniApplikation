@@ -7,8 +7,6 @@ namespace UniApplikation.App.Classes
 {
     interface IXMLList
     {
-        public string Listenname;
-
-        public static IXMLList getList();
+        
     }
 }

@@ -19,7 +19,7 @@ namespace UniApplikation
 
         private void saveCourseList_Click(object sender, EventArgs e)
         {
-            App.Classes.XMLHandler.SerializeObject((DataTable)this.DgVCourses.DataSource);
+            App.Classes.XMLHandler.SerializeObject<App.Classes.CoursesList>((DataTable)this.DgVCourses.DataSource);
         }
     }
 }

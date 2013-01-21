@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 namespace UniApplikation.App.Classes
@@ -13,34 +15,41 @@ namespace UniApplikation.App.Classes
     {       
        // static XmlSerializer serializer;
         static FileStream stream;
-
-        private DataTable dtCourses;
-        private CoursesList courselist;
+        
+        private IXMLList courselist;
+        
 
         public XMLHandler()
         {
-          //  throw new NotImplementedException();
-        }
 
-        public XMLHandler(string ListName)
-        {
-            this.courselist = XMLHandler.DeserializeObject();            
-        }        
-        
-        // Objekt serialisieren
-        public static void SerializeObject(CoursesList objCoursesList)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(CoursesList));
-            stream = new FileStream(Properties.Settings.Default.CoursesXMLPath, FileMode.Create);
-            serializer.Serialize(stream, objCoursesList);
-            stream.Close();         
         }
 
         // Objekt serialisieren
-        public static void SerializeObject(DataTable objDataTable)
+        public static void SerializeObject<T>(IXMLList objCoursesList, string xmlPath)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(T));
+                stream = new FileStream(xmlPath, FileMode.Create);
+                serializer.Serialize(stream, objCoursesList);
+                stream.Close();
+            }
+            catch (IOException)
+            {
+                MessageBox.Show("Das XML File kann nicht beschrieben werden, da es von einem anderem Prozess benutzt wird",
+                "Anwendungsmeldung",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error,
+                MessageBoxDefaultButton.Button1);
+            }
+        }
+
+        // Objekt serialisieren
+        public static void SerializeObject<T>(DataTable objDataTable)
         {
             Course[] courses = new Course[objDataTable.Rows.Count];
             
+            //TODO für StudentsList auch machen!
             if (objDataTable.Columns.Contains("Name") && objDataTable.Columns.Contains("Lecturer") && objDataTable.Columns.Contains("Places"))
             {
                 for(int i = 0; i < objDataTable.Rows.Count; i++){
@@ -50,21 +59,39 @@ namespace UniApplikation.App.Classes
                 CoursesList objCourseList = new CoursesList("Kursliste");
                 objCourseList.Courses = courses;
 
-                XMLHandler.SerializeObject(objCourseList);
+                XMLHandler.SerializeObject<T>(objCourseList, Properties.Settings.Default.CoursesXMLPath);//TODO VARIABLE!
             }
 
             Console.WriteLine("Keine DT!! XMLHANDLER!");
         }
-
-        // Objekt deserialisieren
-        public static CoursesList DeserializeObject()
+        
+        /// <summary>
+        /// Deserializes Objects depending from the given Generic Class, should return a IXMLList Object
+        /// </summary>
+        /// <typeparam name="T">IXMLList Object</typeparam>
+        /// <param name="sSettingsPath">Properties.Settings.Default. {X}</param>
+        /// <returns>IXMLList Object</returns>
+        public static T DeserializeObject<T>(string sSettingsPath)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(CoursesList));
-            stream = new FileStream(Properties.Settings.Default.CoursesXMLPath, FileMode.Open);
-            CoursesList catalog = (CoursesList)serializer.Deserialize(stream);
-            //serializer.Serialize(Console.Out, catalog);
-            stream.Close();
-            return catalog;
+            try
+            {
+                XmlSerializer serializer;
+
+                serializer = new XmlSerializer(typeof(T));
+                stream = new FileStream(sSettingsPath, FileMode.Open);
+
+                T catalog = (T)serializer.Deserialize(stream);
+                //serializer.Serialize(Console.Out, catalog);
+                stream.Close();
+
+                return catalog;
+            }catch(InvalidOperationException){
+                stream.Close();
+                Debugger.Log(1, "XML Error", "Cannot Deserialize Object...");
+               
+                return default(T);
+            }
+            
         }
 
         public void testSerializer(){
@@ -77,25 +104,8 @@ namespace UniApplikation.App.Classes
 
             catalog.Courses = courses;
 
-            XMLHandler.SerializeObject(catalog);
+            XMLHandler.SerializeObject<CoursesList>(catalog, Properties.Settings.Default.CoursesXMLPath);
         }
-
-        internal object getDataTable()
-        {
-
-
-            this.dtCourses = new DataTable();
-            this.dtCourses.Columns.Add("Name");
-            this.dtCourses.Columns.Add("Lecturer");
-            this.dtCourses.Columns.Add("Places");
-
-            foreach (Course tmpCourse in this.courselist.Courses)
-            {
-                this.dtCourses.Rows.Add(tmpCourse.Name, tmpCourse.Lecturer, tmpCourse.Places);
-            }
-
-            return this.dtCourses;
-        }
-        
+      
     }
 }

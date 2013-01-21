@@ -5,14 +5,15 @@
     <StudentsObjekt>
       <ID>0wtafgoLDPvWGjwXSEcR_-lnDpQ@hm.edu</ID>
       <Name>Gernert</Name>
+      <Surname>Matthias Alexander</Surname>
       <Group />
       <PrioritysArray>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
         <PriorityObject>
-          <Priority>2</Priority>
+          <Priority>0</Priority>
           <Value>Noch nicht abgestimmt</Value>
         </PriorityObject>
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
@@ -21,14 +22,15 @@
     <StudentsObjekt>
       <ID>79pD9lN4QAttEsWK32CEIekokzI@hm.edu</ID>
       <Name>Puchan</Name>
+      <Surname>Joerg</Surname>
       <Group />
       <PrioritysArray>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
         <PriorityObject>
-          <Priority>2</Priority>
+          <Priority>0</Priority>
           <Value>Noch nicht abgestimmt</Value>
         </PriorityObject>
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
@@ -37,17 +39,33 @@
     <StudentsObjekt>
       <ID>A2VZ2XbJeb272KOEpanfiFUhOYs@hm.edu</ID>
       <Name>Althaus</Name>
+      <Surname>David</Surname>
       <Group />
       <PrioritysArray>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM7</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>2</Priority>
           <Value>WPM4</Value>
         </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM8</Value>
+        </PriorityObject>
       </PrioritysArray>
     </StudentsObjekt>
     <StudentsObjekt xsi:nil="true" />

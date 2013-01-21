@@ -65,10 +65,18 @@
   <ItemGroup>
     <Compile Include="App\Classes\Course.cs" />
     <Compile Include="App\Classes\CoursesList.cs" />
+    <Compile Include="App\Classes\Priority.cs" />
     <Compile Include="App\Classes\Student.cs" />
     <Compile Include="App\Classes\StudentsList.cs" />
+    <Compile Include="App\Classes\WrongParameterException.cs" />
     <Compile Include="App\Classes\XMLHandler.cs" />
     <Compile Include="App\Classes\IXMLList.cs" />
+    <Compile Include="Controls\ChangeStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ChangeStudent.Designer.cs">
+      <DependentUpon>ChangeStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="DefaultControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ChangeStudent.resx">
+      <DependentUpon>ChangeStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DefaultControl.resx">
       <DependentUpon>DefaultControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CoursesList.xml" />
+    <Content Include="StudentsList.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

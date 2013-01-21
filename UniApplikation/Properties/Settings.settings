@@ -8,5 +8,8 @@
     <Setting Name="CoursesXMLPath" Type="System.String" Scope="Application">
       <Value Profile="(Default)">../../CoursesList.xml</Value>
     </Setting>
+    <Setting Name="StudentsXMLPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">../../StudentsList.xml</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
