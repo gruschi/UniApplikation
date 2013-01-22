@@ -39,7 +39,7 @@ namespace UniApplikation.App.Classes
         /// </summary>
         /// <returns></returns>
         public DataTable getDataTable()
-        {            
+        {
             DataTable dtCourses;
 
             dtCourses = new DataTable();

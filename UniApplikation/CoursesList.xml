@@ -1,55 +1,26 @@
 <?xml version="1.0"?>
-<Studentslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Listenbezeichner>Studentenliste</Listenbezeichner>
-  <StudentsArray>
-    <StudentsObjekt>
-      <ID>0wtafgoLDPvWGjwXSEcR_-lnDpQ@hm.edu</ID>
-      <Name>Gernert</Name>
-      <Group />
-      <PrioritysArray>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject>
-          <Priority>2</Priority>
-          <Value>Noch nicht abgestimmt</Value>
-        </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-      </PrioritysArray>
-    </StudentsObjekt>
-    <StudentsObjekt>
-      <ID>79pD9lN4QAttEsWK32CEIekokzI@hm.edu</ID>
-      <Name>Puchan</Name>
-      <Group />
-      <PrioritysArray>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject>
-          <Priority>2</Priority>
-          <Value>Noch nicht abgestimmt</Value>
-        </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-      </PrioritysArray>
-    </StudentsObjekt>
-    <StudentsObjekt>
-      <ID>A2VZ2XbJeb272KOEpanfiFUhOYs@hm.edu</ID>
-      <Name>Althaus</Name>
-      <Group />
-      <PrioritysArray>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject>
-          <Priority>2</Priority>
-          <Value>WPM4</Value>
-        </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-      </PrioritysArray>
-    </StudentsObjekt>
-    <StudentsObjekt xsi:nil="true" />
-  </StudentsArray>
-</Studentslist>
+<CoursesList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Listenbezeichner>Kursliste</Listenbezeichner>
+  <CoursesArray>
+    <CourseObjekt>
+      <Name>WMP1</Name>
+      <Lecturer>Prof1</Lecturer>
+      <Places>45</Places>
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WMP2</Name>
+      <Lecturer>Prof3</Lecturer>
+      <Places>100</Places>
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WMP3</Name>
+      <Lecturer>Prof2</Lecturer>
+      <Places>100</Places>
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WMP4</Name>
+      <Lecturer>Prof5</Lecturer>
+      <Places>10</Places>
+    </CourseObjekt>
+  </CoursesArray>
+</CoursesList>
