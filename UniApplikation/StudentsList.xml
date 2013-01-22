@@ -77,6 +77,22 @@
         </PriorityObject>
       </PrioritysArray>
     </StudentsObjekt>
-    <StudentsObjekt xsi:nil="true" />
+    <StudentsObjekt>
+      <ID>IDGruschkaxManuel</ID>
+      <Name>Gruschka</Name>
+      <Surname>Manuel</Surname>
+      <Group />
+      <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+      </PrioritysArray>
+    </StudentsObjekt>
   </StudentsArray>
 </Studentslist>

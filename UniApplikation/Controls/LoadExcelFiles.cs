@@ -26,7 +26,7 @@ namespace UniApplikation
             string[] Pfad;
 
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "Excel Files (*.xls,*.xlsx)|*.xls,*.xlsx|All Files (*.*)|*.*";
+            openFileDialog1.Filter = "Excel Files (*.xls;*.xlsx;)|*.xls;*.xlsx;|" + "All Files (*.*)|*.*";
             openFileDialog1.Multiselect = true;            
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -41,14 +41,20 @@ namespace UniApplikation
         private void saveExcelDataToXML(string[] Pfad)
         {
             
+            //foreach (string tmpPath in Pfad)
+            //{
+            //    Thread tmpThread = new Thread(new ParameterizedThreadStart(this.readExcelData));
+            //    tmpThread.Start(tmpPath);
+            //    XMLHandler.threadList.Add(tmpThread);                
+            //}
+
+            //XMLHandler.checkThread.Start();//Test Thread which checks the other Threads and deletes them when they are finish
+
             foreach (string tmpPath in Pfad)
             {
-                Thread tmpThread = new Thread(new ParameterizedThreadStart(this.readExcelData));
-                tmpThread.Start(tmpPath);
-                XMLHandler.threadList.Add(tmpThread);                
+                this.readExcelData(tmpPath);
             }
-
-            XMLHandler.checkThread.Start();//Test Thread which checks the other Threads and deletes them when they are finish
+            
         }
 
         private void readExcelData(object objFile)
@@ -97,8 +103,7 @@ namespace UniApplikation
                     ++iStudentsIndex;                        
                 }
             }
-
-            //TODO Save StudentList Auslagern, sonst wird immer überschrieben!
+            
             App.Classes.StudentsList objStudentsList = App.Classes.StudentsList.getListFromXML();
             objStudentsList.setStudents(objStudents);//Set/Merges Students, Overrides existing Prioritys (if necesarry)
             objStudentsList.saveList();

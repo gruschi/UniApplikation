@@ -61,12 +61,22 @@ namespace UniApplikation.App.Classes
         private void mergeStudents(Student[] objStudentArray)
         {
             for(int i = 0; i < objStudentArray.Length; i++){
+                bool bStudentUpdated = false;
+
                 for(int u = 0; u < this.Students.Length; u++){
                     if (this.Students[u] != null && this.Students[u].Equals(objStudentArray[i]))
                     {
                         this.Students[u].addPrioritys(objStudentArray[i]);
                         u = this.Students.Length;
+
+                        bStudentUpdated = true;//TODO theoretisch kann man hier direkt u = MAX setzen da es ja nicht weitergehen muss oder ?!
                     }
+                }
+
+                if (bStudentUpdated == false)
+                {
+                    Array.Resize(ref this.Students, this.Students.Length+1);//Resize the Array
+                    this.Students[this.Students.Length - 1] = objStudentArray[i];
                 }
             }            
         }
@@ -76,6 +86,24 @@ namespace UniApplikation.App.Classes
         /// </summary>
         internal void saveList()
         {
+            //Delete all null in the Array
+            Student[] tmpStudentArray = new Student[1];
+            int tmpStudentArrayIndex = 0;
+
+            foreach (Student tmpStudent in this.Students)
+            {
+                if (tmpStudent != null)
+                {
+                    tmpStudentArray[tmpStudentArrayIndex] = tmpStudent;
+                    Array.Resize(ref tmpStudentArray, tmpStudentArray.Length + 1);
+                    ++tmpStudentArrayIndex;
+                }
+            }
+
+            Array.Resize(ref tmpStudentArray, tmpStudentArray.Length - 1);
+
+            this.Students = tmpStudentArray;
+
             XMLHandler.SerializeObject<StudentsList>(this, Properties.Settings.Default.StudentsXMLPath);
         }
     }
