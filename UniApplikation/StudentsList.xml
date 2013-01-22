@@ -10,11 +10,20 @@
       <PrioritysArray>
         <PriorityObject>
           <Priority>0</Priority>
-          <Value>Noch nicht abgestimmt</Value>
+          <Value>WPM2</Value>
         </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM10</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM7</Value>
+        </PriorityObject>
         <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
       </PrioritysArray>

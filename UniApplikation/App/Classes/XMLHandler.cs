@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -13,6 +14,9 @@ namespace UniApplikation.App.Classes
 {   
     class XMLHandler
     {       
+        public static List<Thread> threadList = new List<Thread>();
+        public static Thread checkThread = new Thread(new ThreadStart(new CheckThread().run));
+
        // static XmlSerializer serializer;
         static FileStream stream;
         

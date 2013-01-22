@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using UniApplikation.App.Classes;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace UniApplikation
 {
@@ -26,32 +27,33 @@ namespace UniApplikation
 
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Excel Files (*.xls,*.xlsx)|*.xls,*.xlsx|All Files (*.*)|*.*";
-            openFileDialog1.Multiselect = true;
+            openFileDialog1.Multiselect = true;            
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 Pfad = openFileDialog1.FileNames;
 
-                foreach (string tmpPath in Pfad)
-                {
-                    this.saveExcelDataToXML(Pfad);
-                }                
+                this.saveExcelDataToXML(Pfad);               
             }
-                
-
+                           
         }
 
         private void saveExcelDataToXML(string[] Pfad)
         {
+            
             foreach (string tmpPath in Pfad)
             {
-                this.readExcelData(tmpPath);
+                Thread tmpThread = new Thread(new ParameterizedThreadStart(this.readExcelData));
+                tmpThread.Start(tmpPath);
+                XMLHandler.threadList.Add(tmpThread);                
             }
-            
+
+            XMLHandler.checkThread.Start();//Test Thread which checks the other Threads and deletes them when they are finish
         }
 
-        private void readExcelData(string sFile)
-        {         
+        private void readExcelData(object objFile)
+        {
+            String sFile = objFile.ToString();//Parameter to String
             Excel.Application xlApp;
             Excel.Workbook xlWorkBook;
             Excel.Worksheet xlWorkSheet;
@@ -82,6 +84,11 @@ namespace UniApplikation
                     string sID = (string)(range.Cells[rCnt, 3] as Excel.Range).Value2;
                     string sGroup = (string)(range.Cells[rCnt, 4] as Excel.Range).Value2;
                     string sAnswer = (string)(range.Cells[rCnt, 5] as Excel.Range).Value2;
+
+                    if (sID.Length < 2)
+                    {
+                        sID = "ID" + sName + "x" + sSurname;
+                    }
 
                     Student tmpStudent = new App.Classes.Student(sName, sSurname, sID, sGroup);
                     tmpStudent.setChoose(priotity, sAnswer);
