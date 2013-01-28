@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SetCoursesAlgo.Models;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -12,7 +13,7 @@ using System.Xml.Serialization;
 
 namespace UniApplikation.App.Classes
 {       
-    public class Course
+    public class Course : ICourse
     {        
         
     //Die zu serialisierende Klasse

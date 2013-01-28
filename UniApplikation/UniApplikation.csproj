@@ -72,12 +72,17 @@
     <Compile Include="App\Classes\StudentsList.cs" />
     <Compile Include="App\Classes\WrongParameterException.cs" />
     <Compile Include="App\Classes\XMLHandler.cs" />
-    <Compile Include="App\Classes\IXMLList.cs" />
     <Compile Include="Controls\ChangeStudent.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ChangeStudent.Designer.cs">
       <DependentUpon>ChangeStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CoursesCalculationControll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CoursesCalculationControll.Designer.cs">
+      <DependentUpon>CoursesCalculationControll.cs</DependentUpon>
     </Compile>
     <Compile Include="DefaultControl.cs">
       <SubType>UserControl</SubType>
@@ -107,6 +112,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\ChangeStudent.resx">
       <DependentUpon>ChangeStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CoursesCalculationControll.resx">
+      <DependentUpon>CoursesCalculationControll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DefaultControl.resx">
       <DependentUpon>DefaultControl.cs</DependentUpon>
@@ -166,6 +174,12 @@
     <Content Include="StudentsList.xml">
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SetCoursesAlgo\SetCoursesAlgo.csproj">
+      <Project>{6ae38aee-2d2c-47ae-bcec-b31c7d64a0fc}</Project>
+      <Name>SetCoursesAlgo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

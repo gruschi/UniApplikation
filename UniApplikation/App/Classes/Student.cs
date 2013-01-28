@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SetCoursesAlgo.Models;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace UniApplikation.App.Classes
 {
-    public class Student
+    public class Student : IStudent
     {
         [XmlElement("ID")]
         public string ID;//Could be Immatrikulationsnr, or email or smth else
