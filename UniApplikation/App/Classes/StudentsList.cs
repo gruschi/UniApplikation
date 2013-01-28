@@ -66,7 +66,8 @@ namespace UniApplikation.App.Classes
                 for(int u = 0; u < this.Students.Length; u++){
                     if (this.Students[u] != null && this.Students[u].Equals(objStudentArray[i]))
                     {
-                        this.Students[u].addPrioritys(objStudentArray[i]);
+                        this.Students[u].addPrioritys(objStudentArray[i]);//Setzen der Prioritys das es nicht überschrieben wird
+                        this.Students[u].setChoose(-1, objStudentArray[i].countCourses.ToString(), true);//Setzt Wahl der Course das diese nicht überschrieben werden
                         u = this.Students.Length;
 
                         bStudentUpdated = true;//TODO theoretisch kann man hier direkt u = MAX setzen da es ja nicht weitergehen muss oder ?!

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,10 +21,16 @@ namespace UniApplikation.App.Classes
         
         [XmlElement("Group", DataType = "string")]
         public string Group;///Places Left        
+
+        [XmlElement("countCourses")]
+        public int countCourses;///How Many Courses does this Student need ?
+
                             ///
         [XmlArray("PrioritysArray")]
         [XmlArrayItem("PriorityObject")]        
         public Priority[] Prioritys;//TODO vielleicht anders regeln ? Checken ob Sortierung stimmt!
+
+        
 
         public Student()
         {
@@ -36,7 +43,7 @@ namespace UniApplikation.App.Classes
             this.Surname = Surname;
             this.ID = ID;
             this.Group = Group;      
-            this.Prioritys = new Priority[6];
+            this.Prioritys = new Priority[6];            
         }
 
         public static Student getInstance(string Name, string Surname, string ID)
@@ -54,9 +61,23 @@ namespace UniApplikation.App.Classes
             return null;
         }
 
-        internal void setChoose(int priotity, string sAnswer)
+        internal void setChoose(int priotity, string sAnswer, bool bCountCourses)
         {
-            this.Prioritys[priotity] = new Priority(priotity, sAnswer);
+            if (priotity > -1)
+            {
+                this.Prioritys[priotity] = new Priority(priotity, sAnswer);
+            }
+            else
+            {
+                try
+                {
+                    this.countCourses = Convert.ToInt32(sAnswer);
+                }
+                catch (FormatException)
+                {
+                    Logger.LogMessageToFile("ERROR AT STUDENT COUNT COURSES FORMAT ID:" + this.ID);
+                }
+            }
         }
 
         public bool Equals(Student tmpStudent)

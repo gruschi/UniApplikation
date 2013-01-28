@@ -3,58 +3,13 @@
   <Listenbezeichner>Studentenliste</Listenbezeichner>
   <StudentsArray>
     <StudentsObjekt>
-      <ID>0wtafgoLDPvWGjwXSEcR_-lnDpQ@hm.edu</ID>
-      <Name>Gernert</Name>
-      <Surname>Matthias Alexander</Surname>
-      <Group />
-      <PrioritysArray>
-        <PriorityObject>
-          <Priority>0</Priority>
-          <Value>WPM2</Value>
-        </PriorityObject>
-        <PriorityObject>
-          <Priority>1</Priority>
-          <Value>WPM5</Value>
-        </PriorityObject>
-        <PriorityObject>
-          <Priority>2</Priority>
-          <Value>WPM10</Value>
-        </PriorityObject>
-        <PriorityObject>
-          <Priority>3</Priority>
-          <Value>WPM7</Value>
-        </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-      </PrioritysArray>
-    </StudentsObjekt>
-    <StudentsObjekt>
-      <ID>79pD9lN4QAttEsWK32CEIekokzI@hm.edu</ID>
-      <Name>Puchan</Name>
-      <Surname>Joerg</Surname>
-      <Group />
-      <PrioritysArray>
-        <PriorityObject>
-          <Priority>0</Priority>
-          <Value>Noch nicht abgestimmt</Value>
-        </PriorityObject>
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-        <PriorityObject xsi:nil="true" />
-      </PrioritysArray>
-    </StudentsObjekt>
-    <StudentsObjekt>
       <ID>A2VZ2XbJeb272KOEpanfiFUhOYs@hm.edu</ID>
       <Name>Althaus</Name>
       <Surname>David</Surname>
       <Group />
+      <countCourses>3</countCourses>
       <PrioritysArray>
-        <PriorityObject>
-          <Priority>0</Priority>
-          <Value>WPM2</Value>
-        </PriorityObject>
+        <PriorityObject xsi:nil="true" />
         <PriorityObject>
           <Priority>1</Priority>
           <Value>WPM7</Value>
@@ -78,10 +33,53 @@
       </PrioritysArray>
     </StudentsObjekt>
     <StudentsObjekt>
+      <ID>79pD9lN4QAttEsWK32CEIekokzI@hm.edu</ID>
+      <Name>Puchan</Name>
+      <Surname>Joerg</Surname>
+      <Group />
+      <countCourses>0</countCourses>
+      <PrioritysArray>
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+      </PrioritysArray>
+    </StudentsObjekt>
+    <StudentsObjekt>
+      <ID>0wtafgoLDPvWGjwXSEcR_-lnDpQ@hm.edu</ID>
+      <Name>Gernert</Name>
+      <Surname>Matthias Alexander</Surname>
+      <Group />
+      <countCourses>2</countCourses>
+      <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM10</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM7</Value>
+        </PriorityObject>
+        <PriorityObject xsi:nil="true" />
+        <PriorityObject xsi:nil="true" />
+      </PrioritysArray>
+    </StudentsObjekt>
+    <StudentsObjekt>
       <ID>IDGruschkaxManuel</ID>
       <Name>Gruschka</Name>
       <Surname>Manuel</Surname>
       <Group />
+      <countCourses>2</countCourses>
       <PrioritysArray>
         <PriorityObject>
           <Priority>0</Priority>

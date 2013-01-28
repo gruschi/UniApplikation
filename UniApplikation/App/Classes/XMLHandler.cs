@@ -66,7 +66,7 @@ namespace UniApplikation.App.Classes
                 XMLHandler.SerializeObject<T>(objCourseList, Properties.Settings.Default.CoursesXMLPath);//TODO VARIABLE!
             }
 
-            Console.WriteLine("Keine DT!! XMLHANDLER!");
+            Logger.LogMessageToFile("Keine DT!! XMLHANDLER!");
         }
         
         /// <summary>

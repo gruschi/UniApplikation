@@ -66,6 +66,7 @@
     <Compile Include="App\Classes\CheckThread.cs" />
     <Compile Include="App\Classes\Course.cs" />
     <Compile Include="App\Classes\CoursesList.cs" />
+    <Compile Include="App\Classes\Logger.cs" />
     <Compile Include="App\Classes\Priority.cs" />
     <Compile Include="App\Classes\Student.cs" />
     <Compile Include="App\Classes\StudentsList.cs" />
@@ -159,7 +160,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CoursesList.xml" />
+    <Content Include="CoursesList.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="StudentsList.xml">
       <SubType>Designer</SubType>
     </Content>

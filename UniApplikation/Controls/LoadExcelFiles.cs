@@ -35,7 +35,8 @@ namespace UniApplikation
 
                 this.saveExcelDataToXML(Pfad);               
             }
-                           
+
+            MessageBox.Show("Excellisten geladen");
         }
 
         private void saveExcelDataToXML(string[] Pfad)
@@ -76,7 +77,17 @@ namespace UniApplikation
 
             #region getPriority from PathName
             string[] tmpPathSplits = sFile.Split('_');
-            int priotity = Convert.ToInt32(Regex.Match(tmpPathSplits[(tmpPathSplits.Length - 2)], @"\d+").Value) - 1;
+
+            int priotity = -1;
+            bool bCountCourses = false;
+
+            try
+            {
+                priotity = Convert.ToInt32(Regex.Match(tmpPathSplits[(tmpPathSplits.Length - 2)], @"\d+").Value) - 1;
+            } catch( FormatException ){
+                bCountCourses = true;
+            }   
+
             #endregion
 
             //Gehe das ganze Tabellenblatt durch
@@ -89,7 +100,7 @@ namespace UniApplikation
                     string sSurname = (string)(range.Cells[rCnt, 2] as Excel.Range).Value2;
                     string sID = (string)(range.Cells[rCnt, 3] as Excel.Range).Value2;
                     string sGroup = (string)(range.Cells[rCnt, 4] as Excel.Range).Value2;
-                    string sAnswer = (string)(range.Cells[rCnt, 5] as Excel.Range).Value2;
+                    string sAnswer = (string)(range.Cells[rCnt, 5] as Excel.Range).Value2;                    
 
                     if (sID.Length < 2)
                     {
@@ -97,7 +108,7 @@ namespace UniApplikation
                     }
 
                     Student tmpStudent = new App.Classes.Student(sName, sSurname, sID, sGroup);
-                    tmpStudent.setChoose(priotity, sAnswer);
+                    tmpStudent.setChoose(priotity, sAnswer, bCountCourses);
 
                     objStudents[iStudentsIndex] = tmpStudent;
                     ++iStudentsIndex;                        
@@ -109,7 +120,7 @@ namespace UniApplikation
             objStudentsList.saveList();
 
             xlWorkBook.Close(true, null, null);
-            xlApp.Quit();          
+            xlApp.Quit();            
         }
     }
 }
