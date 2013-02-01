@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using SetCoursesAlgo.Models;
 
 namespace UniApplikation.App.Classes
 {
     [XmlRoot("Studentslist")]
-    public class StudentsList : IStudentsList
+    public class StudentsList
     {
 
         [XmlElement("Listenbezeichner")]

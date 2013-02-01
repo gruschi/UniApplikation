@@ -1,5 +1,4 @@
-﻿using SetCoursesAlgo.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -21,7 +20,7 @@ namespace UniApplikation.App.Classes
        // static XmlSerializer serializer;
         static FileStream stream;
         
-        private IXMLList courselist;
+        private object courselist;
         
 
         public XMLHandler()
@@ -30,7 +29,7 @@ namespace UniApplikation.App.Classes
         }
 
         // Objekt serialisieren
-        public static void SerializeObject<T>(IXMLList objCoursesList, string xmlPath)
+        public static void SerializeObject<T>(object objCoursesList, string xmlPath)
         {
             try
             {
@@ -91,7 +90,9 @@ namespace UniApplikation.App.Classes
 
                 return catalog;
             }catch(InvalidOperationException){
-                stream.Close();
+                if(stream != null)
+                    stream.Close();
+
                 Debugger.Log(1, "XML Error", "Cannot Deserialize Object...");
                
                 return default(T);

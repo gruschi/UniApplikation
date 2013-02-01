@@ -1,5 +1,4 @@
-﻿using SetCoursesAlgo.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -10,7 +9,7 @@ using System.Xml.Serialization;
 namespace UniApplikation.App.Classes
 {
     [XmlRoot("CoursesList")]
-    public class CoursesList : ICoursesList
+    public class CoursesList
     {
         [XmlElement("Listenbezeichner")]
         public string Listenname;

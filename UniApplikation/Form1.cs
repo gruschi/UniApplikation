@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UniApplikation.Controls;
 
 namespace UniApplikation
 {
@@ -48,6 +49,13 @@ namespace UniApplikation
         {
             this.contentPanelDefault.Controls.Clear();//TODO Anders ?
             this.contentPanelDefault.Controls.Add(new ManageCourses());
+            this.contentPanelDefault.Update();
+        }
+
+        private void berechnenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.contentPanelDefault.Controls.Clear();//TODO Anders ?            
+            this.contentPanelDefault.Controls.Add(new CoursesCalculationControll());
             this.contentPanelDefault.Update();
         }
     }

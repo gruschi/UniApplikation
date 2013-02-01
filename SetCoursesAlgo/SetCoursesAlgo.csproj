@@ -40,15 +40,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Course.cs" />
+    <Compile Include="Controller\Logger.cs" />
     <Compile Include="Controller\Student.cs" />
-    <Compile Include="Models\ICourse.cs" />
-    <Compile Include="Models\ICoursesList.cs" />
     <Compile Include="Controller\Handler.cs" />
-    <Compile Include="Models\IPriority.cs" />
-    <Compile Include="Models\IXMLList.cs" />
+    <Compile Include="Controller\Priority.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\IStudent.cs" />
-    <Compile Include="Models\IStudentsList.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

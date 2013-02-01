@@ -1,5 +1,4 @@
 ﻿using SetCoursesAlgo.Controller;
-using SetCoursesAlgo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,28 +9,57 @@ namespace SetCoursesAlgo
 {
     public class Handler
     {
-        private List<ICourse> objCoursesList;
-        private List<IStudent> objStudentsList;
+        private List<Course> objCoursesList;
+        private List<Student> objStudentsList;
 
-        public Handler(List<ICourse> objCoursesList, List<IStudent> objStudentsList)
+
+        private List<Student> objStudentsListCopy;//Kopie aus welcher wir Daten löschen können ?
+        private int cCalculate = 0;
+
+        public Handler(List<Course> objCoursesList, List<Student> objStudentsList)
         {
             this.objCoursesList = objCoursesList;
-            this.objStudentsList = objStudentsList;
+            this.objStudentsList = this.objStudentsListCopy = objStudentsList;
         }
 
         public bool calculate()
         {
             this.objStudentsList.Shuffle();
 
-            foreach (Student tmpStudent in this.objStudentsList)
+            foreach (Student tmpStudent in this.objStudentsListCopy)
             {
+                for(int p = 0; p < tmpStudent.Prioritys.Count; p++){
+                    Course selectedCourse = Course.getInstance(tmpStudent.Prioritys[p].Value.ToString());
 
+                    if (selectedCourse.addStudent(tmpStudent))
+                    {
+                        tmpStudent.Prioritys.RemoveAt(p);
+
+                        //Noch Prios vorhanden ? Wenn nicht wird Student aus liste gelöscht
+                        if (tmpStudent.Prioritys.Count == 0)
+                        {
+                            this.objStudentsListCopy.Remove(tmpStudent);
+                        }
+
+                        p = tmpStudent.Prioritys.Count;//Nur ein Kurs pro Durchgang!
+                    }
+                }
+                
             }
 
+            ++this.cCalculate;
+
+            if (this.cCalculate < 100 && this.objStudentsListCopy.Count > 0)
+            {
+                this.calculate();
+            }
             return false;
         }
     }
 
+    /// <summary>
+    /// Shuffles the List
+    /// </summary>
     static class MyExtensions
     {
         static readonly Random Random = new Random();

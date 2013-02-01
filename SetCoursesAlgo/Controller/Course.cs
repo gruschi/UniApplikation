@@ -3,43 +3,71 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace SetCoursesAlgo.Controller
 {
-    internal class Course : SetCoursesAlgo.Models.ICourse
+    public class Course
     {
+        private static readonly Dictionary<object, Course> _instances = new Dictionary<object, Course>();
+
+        //Die zu serialisierende Klasse
+        //(Die XML-Attribute werden nur für die Xml-serialisierung gebraucht)    
+
+        [XmlElement("Name")]
         public string Name;
-      
+        [XmlElement("Lecturer")]
         public string Lecturer;
-       
-        public int iMaxPlaces;        
+        [XmlElement("Places", DataType = "int")]
+        public int Places;///Places Left            
 
-        public Student[] objStudents;
-        private int iCounterStudents = 0;
 
-        public Course(string name, string lecturer, int maxPlaces)
+        public int iMaxPlaces;
+
+        public List<Student> objStudents;
+        private int iCounterStudents = 0;                
+
+        public Course()
         {
-            this.Name = name;
-            this.Lecturer = lecturer;
-            this.iMaxPlaces = maxPlaces;
 
-            this.objStudents = new Student[maxPlaces];
         }
+
+        public Course(string Name, string Lecturer, int Places)
+        {
+            this.Name = Name;
+            this.Lecturer = Lecturer;
+            this.Places = Places;
+            this.iMaxPlaces = Places;
+        }      
 
         public bool addStudent(Student objStudent)
         {
-            if (this.iCounterStudents >= this.objStudents.Length)//Course full
+            if (this.iCounterStudents >= this.objStudents.Count)//Course full
             {
                 return false;
             }
             else
             {
-                this.objStudents[iCounterStudents] = objStudent;
+                this.objStudents.Add(objStudent);
                 ++iCounterStudents;
                 return true;
             }
 
             
+        }
+
+        public static Course getInstance(object key)
+        {
+            lock (_instances)
+            {
+                Course instance;
+                if (!_instances.TryGetValue(key, out instance))
+                {
+                    instance = new Course();
+                    _instances.Add(key, instance);
+                }
+                return instance;
+            }
         }
     }
 }
