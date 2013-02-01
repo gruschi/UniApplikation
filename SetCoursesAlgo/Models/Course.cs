@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace SetCoursesAlgo.Controller
+namespace SetCoursesAlgo.Models
 {
     public class Course
     {
-        private static readonly Dictionary<object, Course> _instances = new Dictionary<object, Course>();
+        public static Dictionary<string, Course> _instances = new Dictionary<string, Course>();
+        static object _lock = new object();
 
         //Die zu serialisierende Klasse
         //(Die XML-Attribute werden nur für die Xml-serialisierung gebraucht)    
@@ -20,12 +21,10 @@ namespace SetCoursesAlgo.Controller
         public string Lecturer;
         [XmlElement("Places", DataType = "int")]
         public int Places;///Places Left            
-
-
+       
         public int iMaxPlaces;
 
-        public List<Student> objStudents;
-        private int iCounterStudents = 0;                
+        public List<Student> objStudents = new List<Student> ();                     
 
         public Course()
         {
@@ -42,32 +41,49 @@ namespace SetCoursesAlgo.Controller
 
         public bool addStudent(Student objStudent)
         {
-            if (this.iCounterStudents >= this.objStudents.Count)//Course full
+            if (this.objStudents.Count >= iMaxPlaces)//Course full
             {
                 return false;
             }
             else
             {
-                this.objStudents.Add(objStudent);
-                ++iCounterStudents;
+                this.objStudents.Add(objStudent);                
                 return true;
             }
 
             
         }
 
-        public static Course getInstance(object key)
+        public static Course getInstance(string key)
         {
-            lock (_instances)
+            lock (_lock)
             {
-                Course instance;
-                if (!_instances.TryGetValue(key, out instance))
+                if (!_instances.ContainsKey(key))
                 {
-                    instance = new Course();
-                    _instances.Add(key, instance);
+                    _instances.Add(key, new Course());
                 }
-                return instance;
             }
+            return _instances[key];
+        }
+
+        /// <summary>
+        /// Override Equals and HasCode because of Dictionary.TryGetValue!
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            var k = obj as Course;
+            if (k != null)
+            {
+                return this.Name == k.Name;
+            }
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return this.Name.GetHashCode();
         }
     }
 }

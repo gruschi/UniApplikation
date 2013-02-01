@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace UniApplikation.App.Classes
+namespace SetCoursesAlgo.Models
 {
     [XmlRoot("CoursesList")]
     public class CoursesList
@@ -30,7 +30,7 @@ namespace UniApplikation.App.Classes
         /// <returns></returns>
         public static CoursesList getListFromXML()
         {
-            string sPath = Properties.Settings.Default.CoursesXMLPath;
+            string sPath = Handler.sCourseXMLPath;
             return XMLHandler.DeserializeObject<CoursesList>(sPath);
         }
 
@@ -54,6 +54,33 @@ namespace UniApplikation.App.Classes
 
             return dtCourses;
         }
-        
+
+        internal Course getCourse(string p)
+        {
+            foreach (Course tmpCourse in this.Courses)
+            {
+                if (tmpCourse.Name == p)
+                {
+                    return tmpCourse;
+                }
+            }
+
+            return new Course(p, "UNKNOWN", 1000);
+        }
+
+        /// <summary>
+        /// Sets the iMaxPLaces if they arent set
+        /// </summary>
+        internal void repair()
+        {
+            foreach (Course tmpCourse in this.Courses)
+            {
+                if (tmpCourse.iMaxPlaces <= 0)
+                {
+                    tmpCourse.iMaxPlaces = tmpCourse.Places;
+                }
+            }
+
+        }
     }
 }

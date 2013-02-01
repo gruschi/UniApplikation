@@ -1,4 +1,6 @@
-﻿namespace UniApplikation
+﻿using SetCoursesAlgo.Models;
+
+namespace UniApplikation.Controls
 {
     partial class ManageCourses
     {
@@ -41,7 +43,7 @@
             this.DgVCourses.Size = new System.Drawing.Size(314, 182);
             this.DgVCourses.TabIndex = 0;
             //this.DgVCourses.DataSource = new App.Classes.CoursesList().getDataTable();
-            this.DgVCourses.DataSource = App.Classes.CoursesList.getListFromXML().getDataTable();
+            this.DgVCourses.DataSource = CoursesList.getListFromXML().getDataTable();
             // 
             // saveCourseList
             // 

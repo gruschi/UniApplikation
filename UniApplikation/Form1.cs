@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SetCoursesAlgo.Models;
 using UniApplikation.Controls;
+using SetCoursesAlgo.Models;
 
 namespace UniApplikation
 {
@@ -27,7 +29,7 @@ namespace UniApplikation
 
         private void speichernToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            App.Classes.XMLHandler testObj = new App.Classes.XMLHandler();
+            XMLHandler testObj = new XMLHandler();
             testObj.testSerializer();
         }
 

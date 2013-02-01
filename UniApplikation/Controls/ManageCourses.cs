@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SetCoursesAlgo.Models;
 
-namespace UniApplikation
+namespace UniApplikation.Controls
 {
     public partial class ManageCourses : UserControl
     {
@@ -19,7 +20,7 @@ namespace UniApplikation
 
         private void saveCourseList_Click(object sender, EventArgs e)
         {
-            App.Classes.XMLHandler.SerializeObject<App.Classes.CoursesList>((DataTable)this.DgVCourses.DataSource);
+            XMLHandler.SerializeObject<CoursesList>((DataTable)this.DgVCourses.DataSource, Properties.Settings.Default.CoursesXMLPath);
         }
     }
 }

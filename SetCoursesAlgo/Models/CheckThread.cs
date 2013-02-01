@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Windows.Forms;
 
-namespace UniApplikation.App.Classes
+namespace SetCoursesAlgo.Models
 {
     class CheckThread
     {
@@ -23,7 +22,7 @@ namespace UniApplikation.App.Classes
 
             XMLHandler.threadList = tmpThreadList;
                         
-            MessageBox.Show("Finished Threads!");//TODO
+            Logger.LogMessageToFile("Finished Threads!");//TODO
         }
     }
 }

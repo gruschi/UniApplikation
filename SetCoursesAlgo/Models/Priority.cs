@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace UniApplikation.App.Classes
+namespace SetCoursesAlgo.Models
 {
     public class Priority
-    {
+    {        
         [XmlElement("Priority")]
         public int Prio;
 
@@ -23,7 +23,6 @@ namespace UniApplikation.App.Classes
         {
             this.Prio = prio;
             this.Value = value;
-        }
-        
+        }        
     }
 }

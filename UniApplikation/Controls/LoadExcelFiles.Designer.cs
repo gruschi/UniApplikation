@@ -1,4 +1,4 @@
-﻿namespace UniApplikation
+﻿namespace UniApplikation.Controls
 {
     partial class LoadExcelFiles
     {

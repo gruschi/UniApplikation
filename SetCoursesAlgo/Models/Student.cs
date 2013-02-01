@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace SetCoursesAlgo.Controller
+namespace SetCoursesAlgo.Models
 {
     public class Student
     {
@@ -57,7 +57,7 @@ namespace SetCoursesAlgo.Controller
                 }
                 catch (FormatException)
                 {
-                    SetCourse.App.Classes.Logger.LogMessageToFile("ERROR AT STUDENT COUNT COURSES FORMAT ID:" + this.ID);
+                    Logger.LogMessageToFile("ERROR AT STUDENT COUNT COURSES FORMAT ID:" + this.ID);
                 }
             }
         }
@@ -88,6 +88,23 @@ namespace SetCoursesAlgo.Controller
                 }
             }
         }
+
+        public static Student getInstance(string Name, string Surname, string ID)
+        {
+            StudentsList objStudentList = StudentsList.getListFromXML();
+
+            foreach (Student tmpStudent in objStudentList.Students)
+            {
+                if (tmpStudent.Name == Name && tmpStudent.Surname == Surname && tmpStudent.ID == ID)
+                {
+                    return tmpStudent;
+                }
+            }
+
+            return null;
+        }
+
+           
   
     }
 }

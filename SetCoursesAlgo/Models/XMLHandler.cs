@@ -7,21 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace UniApplikation.App.Classes
+namespace SetCoursesAlgo.Models
 {   
-    class XMLHandler
+    public class XMLHandler
     {       
         public static List<Thread> threadList = new List<Thread>();
         public static Thread checkThread = new Thread(new ThreadStart(new CheckThread().run));
 
        // static XmlSerializer serializer;
-        static FileStream stream;
-        
-        private object courselist;
-        
+        static FileStream stream;                 
 
         public XMLHandler()
         {
@@ -29,46 +25,21 @@ namespace UniApplikation.App.Classes
         }
 
         // Objekt serialisieren
-        public static void SerializeObject<T>(object objCoursesList, string xmlPath)
+        public static void SerializeObject<T>(object objList, string xmlPath)
         {
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(T));
                 stream = new FileStream(xmlPath, FileMode.Create);
-                serializer.Serialize(stream, objCoursesList);
+                serializer.Serialize(stream, objList);
                 stream.Close();
             }
             catch (IOException)
             {
-                MessageBox.Show("Das XML File kann nicht beschrieben werden, da es von einem anderem Prozess benutzt wird",
-                "Anwendungsmeldung",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error,
-                MessageBoxDefaultButton.Button1);
+                Logger.LogMessageToFile("Das XML File kann nicht beschrieben werden, da es von einem anderem Prozess benutzt wird");
             }
         }
-
-        // Objekt serialisieren
-        public static void SerializeObject<T>(DataTable objDataTable)
-        {
-            Course[] courses = new Course[objDataTable.Rows.Count];
-            
-            //TODO für StudentsList auch machen!
-            if (objDataTable.Columns.Contains("Name") && objDataTable.Columns.Contains("Lecturer") && objDataTable.Columns.Contains("Places"))
-            {
-                for(int i = 0; i < objDataTable.Rows.Count; i++){
-                    courses[i] = new Course(objDataTable.Rows[i]["Name"].ToString(), objDataTable.Rows[i]["Lecturer"].ToString(), Convert.ToInt32(objDataTable.Rows[i]["Places"]));
-                }
-
-                CoursesList objCourseList = new CoursesList("Kursliste");
-                objCourseList.Courses = courses;
-
-                XMLHandler.SerializeObject<T>(objCourseList, Properties.Settings.Default.CoursesXMLPath);//TODO VARIABLE!
-            }
-
-            Logger.LogMessageToFile("Keine DT!! XMLHANDLER!");
-        }
-        
+       
         /// <summary>
         /// Deserializes Objects depending from the given Generic Class, should return a IXMLList Object
         /// </summary>
@@ -110,7 +81,7 @@ namespace UniApplikation.App.Classes
 
             catalog.Courses = courses;
 
-            XMLHandler.SerializeObject<CoursesList>(catalog, Properties.Settings.Default.CoursesXMLPath);
+            XMLHandler.SerializeObject<CoursesList>(catalog, Handler.sCourseXMLPath);
         }
       
     }

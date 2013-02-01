@@ -3,22 +3,22 @@
   <Listenbezeichner>Kursliste</Listenbezeichner>
   <CoursesArray>
     <CourseObjekt>
-      <Name>WMP1</Name>
+      <Name>WPM1</Name>
       <Lecturer>Prof1</Lecturer>
       <Places>45</Places>
     </CourseObjekt>
     <CourseObjekt>
-      <Name>WMP2</Name>
+      <Name>WPM2</Name>
       <Lecturer>Prof3</Lecturer>
       <Places>100</Places>
     </CourseObjekt>
     <CourseObjekt>
-      <Name>WMP3</Name>
+      <Name>WPM3</Name>
       <Lecturer>Prof2</Lecturer>
       <Places>100</Places>
     </CourseObjekt>
     <CourseObjekt>
-      <Name>WMP4</Name>
+      <Name>WPM4</Name>
       <Lecturer>Prof5</Lecturer>
       <Places>10</Places>
     </CourseObjekt>

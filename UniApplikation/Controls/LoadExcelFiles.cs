@@ -7,12 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
-using UniApplikation.App.Classes;
-using System.Text.RegularExpressions;
-using System.Threading;
+using Models = SetCoursesAlgo.Models;
 
-namespace UniApplikation
+namespace UniApplikation.Controls
 {
     public partial class LoadExcelFiles : UserControl
     {
@@ -60,67 +57,7 @@ namespace UniApplikation
 
         private void readExcelData(object objFile)
         {
-            String sFile = objFile.ToString();//Parameter to String
-            Excel.Application xlApp;
-            Excel.Workbook xlWorkBook;
-            Excel.Worksheet xlWorkSheet;
-            Excel.Range range;
-
-            int rCnt = 0;
-            xlApp = new Excel.Application();
-            xlWorkBook = xlApp.Workbooks.Open(sFile, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
-            xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
-            range = xlWorkSheet.UsedRange;
-
-            App.Classes.Student[] objStudents = new App.Classes.Student[range.Rows.Count];
-            int iStudentsIndex = 0;
-
-            #region getPriority from PathName
-            string[] tmpPathSplits = sFile.Split('_');
-
-            int priotity = -1;
-            bool bCountCourses = false;
-
-            try
-            {
-                priotity = Convert.ToInt32(Regex.Match(tmpPathSplits[(tmpPathSplits.Length - 2)], @"\d+").Value) - 1;
-            } catch( FormatException ){
-                bCountCourses = true;
-            }   
-
-            #endregion
-
-            //Gehe das ganze Tabellenblatt durch
-            for (rCnt = 2; rCnt <= range.Rows.Count; rCnt++)//Startet von 2. Zeile wegen Überschriften
-            {
-                //Hier haben wir Zugriff auf jede Zeile
-                if ((range.Cells[rCnt, 1] as Excel.Range).Value2 != null)
-                {                        
-                    string sName = (string)(range.Cells[rCnt, 1] as Excel.Range).Value2;
-                    string sSurname = (string)(range.Cells[rCnt, 2] as Excel.Range).Value2;
-                    string sID = (string)(range.Cells[rCnt, 3] as Excel.Range).Value2;
-                    string sGroup = (string)(range.Cells[rCnt, 4] as Excel.Range).Value2;
-                    string sAnswer = (string)(range.Cells[rCnt, 5] as Excel.Range).Value2;                    
-
-                    if (sID.Length < 2)
-                    {
-                        sID = "ID" + sName + "x" + sSurname;
-                    }
-
-                    Student tmpStudent = new App.Classes.Student(sName, sSurname, sID, sGroup);
-                    tmpStudent.setChoose(priotity, sAnswer, bCountCourses);
-
-                    objStudents[iStudentsIndex] = tmpStudent;
-                    ++iStudentsIndex;                        
-                }
-            }
-            
-            App.Classes.StudentsList objStudentsList = App.Classes.StudentsList.getListFromXML();
-            objStudentsList.setStudents(objStudents);//Set/Merges Students, Overrides existing Prioritys (if necesarry)
-            objStudentsList.saveList();
-
-            xlWorkBook.Close(true, null, null);
-            xlApp.Quit();            
+            Models.ExcelHandler.readExcelData(objFile);
         }
     }
 }
