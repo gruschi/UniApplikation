@@ -15,7 +15,7 @@ namespace SetCoursesAlgo.Models
 
         }
 
-        public static void readExcelData(object objFile)
+        public static void readExcelData(object objFile, string sStudentXMLPath)
         {
             String sFile = objFile.ToString();//Parameter to String
             Excel.Application xlApp;
@@ -59,9 +59,9 @@ namespace SetCoursesAlgo.Models
                     string sSurname = (string)(range.Cells[rCnt, 2] as Excel.Range).Value2;
                     string sID = (string)(range.Cells[rCnt, 3] as Excel.Range).Value2;
                     string sGroup = (string)(range.Cells[rCnt, 4] as Excel.Range).Value2;
-                    string sAnswer = (string)(range.Cells[rCnt, 5] as Excel.Range).Value2;
+                    string sAnswer = Convert.ToString((range.Cells[rCnt, 5] as Excel.Range).Value2);
 
-                    if (sID.Length < 2)
+                    if (sID == null || sID.Length < 2)
                     {
                         sID = "ID" + sName + "x" + sSurname;
                     }
@@ -69,14 +69,14 @@ namespace SetCoursesAlgo.Models
                     Student tmpStudent = new Student(sName, sSurname, sID, sGroup);
                     tmpStudent.setChoose(priotity, sAnswer, bCountCourses);
 
-                    objStudents[iStudentsIndex] = tmpStudent;
+                    objStudents.Add(tmpStudent);
                     ++iStudentsIndex;
                 }
             }
 
-            StudentsList objStudentsList = StudentsList.getListFromXML();
+            StudentsList objStudentsList = StudentsList.getListFromXML(sStudentXMLPath);
             objStudentsList.setStudents(objStudents);//Set/Merges Students, Overrides existing Prioritys (if necesarry)
-            objStudentsList.saveList();
+            objStudentsList.saveList(sStudentXMLPath);
 
             xlWorkBook.Close(true, null, null);
             xlApp.Quit();

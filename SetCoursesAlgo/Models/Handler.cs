@@ -25,15 +25,16 @@ namespace SetCoursesAlgo
             Handler.sCourseXMLPath = sCourseXMLPath;
             Handler.sStudentXMLPath = sStudentXMLPath;
 
-            this.objStudensList = StudentsList.getListFromXML();
-            this.objCourseList = CoursesList.getListFromXML();
+            this.objStudensList = StudentsList.getListFromXML(Handler.sStudentXMLPath);
+            this.objCourseList = CoursesList.getListFromXML(Handler.sCourseXMLPath);
 
             this.objStudentsListCopy = objStudensList;
             this.objCourseList.repair();
         }
 
         public bool calculate()
-        {   
+        {
+            this.cCalculate = 0;
             this.objStudensList.Students.Shuffle();
 
             foreach (Student tmpStudent in this.objStudentsListCopy.Students)
@@ -45,10 +46,10 @@ namespace SetCoursesAlgo
 
                         if (selectedCourse.addStudent(tmpStudent))
                         {
-                            tmpStudent.Prioritys.RemoveAt(p);
+                            tmpStudent.Prioritys[p] = null;
 
                             //Noch Prios vorhanden ? Wenn nicht wird Student aus liste gelöscht
-                            if (tmpStudent.Prioritys.Count == 0)
+                            if (!tmpStudent.hasPrioritys())
                             {
                                 this.objStudentsListCopy.Students.Remove(tmpStudent);
                             }
@@ -62,12 +63,28 @@ namespace SetCoursesAlgo
 
             ++this.cCalculate;
 
-            if (this.cCalculate < 100 && this.objStudentsListCopy.Students.Count > 0)
+            if (this.objStudentsListCopy.Students.Count > 0)
             {
-                this.calculate();
+                if (this.cCalculate < 10)
+                {
+                    this.calculate();
+                }        
             }
-            return false;
+
+            if (this.objStudentsListCopy.Students.Count == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
+
+        public void saveResult()
+        {
+            
+        }
     }    
 }

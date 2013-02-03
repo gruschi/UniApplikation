@@ -16,11 +16,23 @@ namespace UniApplikation.Controls
         public ManageCourses()
         {
             InitializeComponent();
+
+            //Bearbeiten der DataTable
+            CoursesList CourseList = CoursesList.getListFromXML(Properties.Settings.Default.CoursesXMLPath);
+            if (CourseList == null)
+            {
+                CourseList = new CoursesList("Kursliste");
+            }
+
+            this.DgVCourses.DataSource = CourseList.getDataTable();
         }
 
         private void saveCourseList_Click(object sender, EventArgs e)
         {
-            XMLHandler.SerializeObject<CoursesList>((DataTable)this.DgVCourses.DataSource, Properties.Settings.Default.CoursesXMLPath);
+            CoursesList objCoursesList = new CoursesList("Kursliste");
+            objCoursesList.Courses = CoursesList.ConvertDTtoCourseList((DataTable)this.DgVCourses.DataSource);
+
+            XMLHandler.SerializeObject<CoursesList>(objCoursesList, Properties.Settings.Default.CoursesXMLPath);
         }
     }
 }

@@ -26,9 +26,7 @@ namespace SetCoursesAlgo.Models
        
         [XmlArray("PrioritysArray")]
         [XmlArrayItem("PriorityObject")]
-        public List<Priority> Prioritys = new List<Priority>();//TODO vielleicht anders regeln ? Checken ob Sortierung stimmt!
-
-
+        public List<Priority> Prioritys = new List<Priority>();//TODO vielleicht anders regeln ? Checken ob Sortierung stimmt!        
 
         public Student()
         {
@@ -80,18 +78,26 @@ namespace SetCoursesAlgo.Models
         /// <param name="student">Student what shall override</param>
         public void addPrioritys(Student student)
         {
-            for (int i = 0; i < this.Prioritys.Count; i++)
-            {
+            for(int i = 0; i < student.Prioritys.Count; i++){
                 if (student.Prioritys[i] != null && student.Prioritys[i].Value.Length > 0 && student.Prioritys[i].Value != "Noch nicht abgestimmt")
-                {
-                    this.Prioritys[i] = student.Prioritys[i];
-                }
-            }
+                    {
+                        if (this.Prioritys.Count >= student.Prioritys[i].Prio)
+                        {
+                            this.Prioritys.Add(student.Prioritys[i]);
+                        }
+                        else
+                        {
+                            this.Prioritys[student.Prioritys[i].Prio] = student.Prioritys[i];
+                        }
+
+                        
+                    }
+            }                        
         }
 
         public static Student getInstance(string Name, string Surname, string ID)
         {
-            StudentsList objStudentList = StudentsList.getListFromXML();
+            StudentsList objStudentList = StudentsList.getListFromXML(Handler.sStudentXMLPath);
 
             foreach (Student tmpStudent in objStudentList.Students)
             {
@@ -104,7 +110,20 @@ namespace SetCoursesAlgo.Models
             return null;
         }
 
-           
-  
+
+
+
+        internal bool hasPrioritys()
+        {
+            foreach (Priority tmpPrio in this.Prioritys)
+            {
+                if (tmpPrio != null)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }

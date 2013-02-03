@@ -57,7 +57,7 @@ namespace UniApplikation.Controls
 
         private void readExcelData(object objFile)
         {
-            Models.ExcelHandler.readExcelData(objFile);
+            Models.ExcelHandler.readExcelData(objFile, Properties.Settings.Default.StudentsXMLPath);
         }
     }
 }

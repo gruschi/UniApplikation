@@ -29,9 +29,8 @@ namespace SetCoursesAlgo.Models
         /// Returns this Class from a Deserialized XML File
         /// </summary>
         /// <returns></returns>
-        public static StudentsList getListFromXML()
-        {
-            string sPath = Handler.sStudentXMLPath;
+        public static StudentsList getListFromXML(string sPath)
+        {            
             StudentsList tmpList = XMLHandler.DeserializeObject<StudentsList>(sPath);
             return (tmpList != null)? tmpList : new StudentsList("Studentenliste");        
         }
@@ -60,23 +59,30 @@ namespace SetCoursesAlgo.Models
         /// <param name="objStudentArray"></param>
         private void mergeStudents(List<Student> objStudentArray)
         {
-            for(int i = 0; i < objStudentArray.Count; i++){               
+            for(int i = 0; i < objStudentArray.Count; i++){
+                Boolean bStudentAdded = false;
 
                 for(int u = 0; u < this.Students.Count; u++){
                     if (this.Students[u] != null && this.Students[u].Equals(objStudentArray[i]))
                     {
                         this.Students[u].addPrioritys(objStudentArray[i]);//Setzen der Prioritys das es nicht überschrieben wird
                         this.Students[u].setChoose(-1, objStudentArray[i].countCourses.ToString(), true);//Setzt Wahl der Course das diese nicht überschrieben werden
+                        bStudentAdded = true;//Falls der Student nicht vorhanden ist wird er am Ende zur Liste hinzugefügt
                         u = this.Students.Count;//Stop for Loop                      
-                    }
-                }             
+                    }                   
+                }
+
+                if (bStudentAdded == false)
+                {
+                    this.Students.Add(objStudentArray[i]);
+                }
             }            
         }
        
         /// <summary>
         /// Saves List to XML File (Serialize)
         /// </summary>
-        internal void saveList()
+        internal void saveList(string sPath)
         {
             //Delete all null in the Array
             List<Student> tmpStudentList = new List<Student>();            
@@ -91,7 +97,7 @@ namespace SetCoursesAlgo.Models
 
             this.Students = tmpStudentList;
 
-            XMLHandler.SerializeObject<StudentsList>(this, Handler.sStudentXMLPath);
+            XMLHandler.SerializeObject<StudentsList>(this, sPath);
         }
     }
 

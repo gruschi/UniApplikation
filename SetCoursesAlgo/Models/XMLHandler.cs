@@ -64,7 +64,7 @@ namespace SetCoursesAlgo.Models
                 if(stream != null)
                     stream.Close();
 
-                Debugger.Log(1, "XML Error", "Cannot Deserialize Object...");
+                Debugger.Log(1, "XML Error", "Cannot Deserialize Object... Maybe no Text in File?!");
                
                 return default(T);
             }
@@ -79,7 +79,7 @@ namespace SetCoursesAlgo.Models
             courses[0] = new Course("WMP1", "Prof1", 45);
             courses[1] = new Course("WMP2", "Prof3", 100);
 
-            catalog.Courses = courses;
+          //  catalog.Courses = courses;
 
             XMLHandler.SerializeObject<CoursesList>(catalog, Handler.sCourseXMLPath);
         }

@@ -22,6 +22,7 @@ namespace UniApplikation.Controls
         {        
             SetCoursesAlgo.Handler objHandler = new SetCoursesAlgo.Handler(Properties.Settings.Default.CoursesXMLPath, Properties.Settings.Default.StudentsXMLPath);
             objHandler.calculate();
+            objHandler.saveResult();
         }
     }
 }

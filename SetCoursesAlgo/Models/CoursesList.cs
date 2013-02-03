@@ -15,7 +15,7 @@ namespace SetCoursesAlgo.Models
         public string Listenname;
         [XmlArray("CoursesArray")]
         [XmlArrayItem("CourseObjekt")]
-        public Course[] Courses;
+        public List<Course> Courses;
         // Konstruktoren
         public CoursesList() { }
 
@@ -28,9 +28,8 @@ namespace SetCoursesAlgo.Models
         /// Returns this Class from a Deserialized XML File
         /// </summary>
         /// <returns></returns>
-        public static CoursesList getListFromXML()
-        {
-            string sPath = Handler.sCourseXMLPath;
+        public static CoursesList getListFromXML(string sPath)
+        {            
             return XMLHandler.DeserializeObject<CoursesList>(sPath);
         }
 
@@ -47,9 +46,12 @@ namespace SetCoursesAlgo.Models
             dtCourses.Columns.Add("Lecturer");
             dtCourses.Columns.Add("Places");
 
-            foreach (Course tmpCourse in this.Courses)
+            if (this.Courses != null && this.Courses.Count > 0)
             {
-                dtCourses.Rows.Add(tmpCourse.Name, tmpCourse.Lecturer, tmpCourse.Places);
+                foreach (Course tmpCourse in this.Courses)
+                {
+                    dtCourses.Rows.Add(tmpCourse.Name, tmpCourse.Lecturer, tmpCourse.Places);
+                }
             }
 
             return dtCourses;
@@ -81,6 +83,18 @@ namespace SetCoursesAlgo.Models
                 }
             }
 
+        }
+
+        public static List<Course> ConvertDTtoCourseList(DataTable objDT)
+        {        
+            List<Course> tmpCourseList = new List<Course>();
+
+
+            foreach(DataRow tmpRow in objDT.Rows){
+                tmpCourseList.Add(new Course(tmpRow["Name"].ToString(), tmpRow["Lecturer"].ToString(), Convert.ToInt32(tmpRow["Places"])));
+            }
+
+            return tmpCourseList;
         }
     }
 }

@@ -43,7 +43,7 @@ namespace UniApplikation.Controls
             this.DgVCourses.Size = new System.Drawing.Size(314, 182);
             this.DgVCourses.TabIndex = 0;
             //this.DgVCourses.DataSource = new App.Classes.CoursesList().getDataTable();
-            this.DgVCourses.DataSource = CoursesList.getListFromXML().getDataTable();
+            //this.DgVCourses.DataSource = CoursesList.getListFromXML(Properties.Settings.Default.CoursesXMLPath).getDataTable();
             // 
             // saveCourseList
             // 

@@ -5,22 +5,72 @@
     <CourseObjekt>
       <Name>WPM1</Name>
       <Lecturer>Prof1</Lecturer>
-      <Places>45</Places>
+      <Places>25</Places>
+      <iMaxPlaces>25</iMaxPlaces>
+      <objStudents />
     </CourseObjekt>
     <CourseObjekt>
       <Name>WPM2</Name>
-      <Lecturer>Prof3</Lecturer>
-      <Places>100</Places>
+      <Lecturer>Prof2</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
     </CourseObjekt>
     <CourseObjekt>
       <Name>WPM3</Name>
-      <Lecturer>Prof2</Lecturer>
-      <Places>100</Places>
+      <Lecturer>Prof5</Lecturer>
+      <Places>20</Places>
+      <iMaxPlaces>20</iMaxPlaces>
+      <objStudents />
     </CourseObjekt>
     <CourseObjekt>
       <Name>WPM4</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WPM5</Name>
       <Lecturer>Prof5</Lecturer>
-      <Places>10</Places>
+      <Places>25</Places>
+      <iMaxPlaces>25</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WPM6</Name>
+      <Lecturer>Prof2</Lecturer>
+      <Places>20</Places>
+      <iMaxPlaces>20</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WPM7</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>35</Places>
+      <iMaxPlaces>35</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WPM8</Name>
+      <Lecturer>Prof9</Lecturer>
+      <Places>35</Places>
+      <iMaxPlaces>35</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WPM9</Name>
+      <Lecturer>Prof10</Lecturer>
+      <Places>40</Places>
+      <iMaxPlaces>40</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>WPM10</Name>
+      <Lecturer>Prof1</Lecturer>
+      <Places>15</Places>
+      <iMaxPlaces>15</iMaxPlaces>
+      <objStudents />
     </CourseObjekt>
   </CoursesArray>
 </CoursesList>
