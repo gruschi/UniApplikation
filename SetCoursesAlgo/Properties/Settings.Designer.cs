@@ -46,5 +46,17 @@ namespace SetCoursesAlgo.Properties {
                 this["Version"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("25")]
+        public int MaxCalculations {
+            get {
+                return ((int)(this["MaxCalculations"]));
+            }
+            set {
+                this["MaxCalculations"] = value;
+            }
+        }
     }
 }

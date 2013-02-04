@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -81,6 +82,64 @@ namespace SetCoursesAlgo.Models
             xlWorkBook.Close(true, null, null);
             xlApp.Quit();
         }
-    
+
+        public static void CreateExcelFile(DataTable dt, string strPathRelative)
+        {          
+            Excel.Application xlApp;
+            Excel.Workbook xlWorkBook;
+            Excel.Worksheet xlWorkSheet;
+            Excel.Range range;
+
+            xlApp = new Excel.Application();
+            xlApp.Visible = true;
+            xlWorkBook = xlApp.Workbooks.Add(1);
+            xlWorkSheet = (Excel.Worksheet)xlWorkBook.Sheets[1];
+            range = xlWorkSheet.UsedRange;
+              
+            //Write all the Columns
+            int iColCount = dt.Columns.Count;
+            foreach (DataColumn c in dt.Columns)           
+            {
+                ++iColCount; 
+                xlApp.Cells[1, iColCount] = c.ColumnName;                
+            }                
+
+            // Now write all the rows.
+            int iRowIndex = 2;
+            foreach (DataRow dr in dt.Rows)
+            {
+                int iCol = 0;
+                foreach (DataColumn c in dt.Columns)           
+                {
+                    xlApp.Cells[iRowIndex, iCol] = dr[iCol].ToString();                   
+                    ++iCol;
+                }
+
+                ++iRowIndex;
+            }
+
+            // Global missing reference for objects we are not defining...
+            object missing = System.Reflection.Missing.Value;
+
+            xlWorkBook.SaveAs(strPathRelative + dt.TableName,
+                       Excel.XlFileFormat.xlXMLSpreadsheet, missing, missing,
+                       false, false, Excel.XlSaveAsAccessMode.xlNoChange,
+                       missing, missing, missing, missing, missing);
+
+            Excel.Worksheet worksheet = (Excel.Worksheet)xlApp.ActiveSheet;
+            ((Excel._Worksheet)worksheet).Activate();
+
+            // If wanting excel to shutdown...
+            ((Excel._Application)xlApp).Quit();
+           
+        }
+
+        public static void CreateExcelFile(List<DataTable> dtList, string strPathRelative)
+        {
+            foreach (DataTable dtTemp in dtList)
+            {
+                ExcelHandler.CreateExcelFile(dtTemp, strPathRelative);
+            }
+        }
     }
 }

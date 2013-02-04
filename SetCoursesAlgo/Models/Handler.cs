@@ -1,6 +1,7 @@
 ﻿using SetCoursesAlgo.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace SetCoursesAlgo
         private StudentsList objStudentsListCopy;//Kopie aus welcher wir Daten löschen können ?
 
         private int cCalculate = 0;
+        private int maxCalculations = Properties.Settings.Default.MaxCalculations;
 
         public Handler(string sCourseXMLPath, string sStudentXMLPath)
         {
@@ -30,16 +32,23 @@ namespace SetCoursesAlgo
 
             this.objStudentsListCopy = objStudensList;
             this.objCourseList.repair();
+            this.cCalculate = 0;//Inital Set off calculate
         }
 
+        /// <summary>
+        /// Calculates the curses
+        /// </summary>
+        /// <returns></returns>
         public bool calculate()
-        {
-            this.cCalculate = 0;
-            this.objStudensList.Students.Shuffle();
+        {            
+            this.objStudensList.Students.Shuffle();            
 
-            foreach (Student tmpStudent in this.objStudentsListCopy.Students)
+            for (int i = this.objStudentsListCopy.Students.Count - 1; i >= 0; i--)
             {
-                for(int p = 0; p < tmpStudent.Prioritys.Count; p++){
+                Student tmpStudent = this.objStudentsListCopy.Students[i];
+
+                for (int p = 0; p < tmpStudent.Prioritys.Count; p++)
+                {
                     if (tmpStudent.Prioritys[p] != null)
                     {
                         Course selectedCourse = this.objCourseList.getCourse(tmpStudent.Prioritys[p].Value);
@@ -47,25 +56,25 @@ namespace SetCoursesAlgo
                         if (selectedCourse.addStudent(tmpStudent))
                         {
                             tmpStudent.Prioritys[p] = null;
+                            --tmpStudent.countCourses;
 
-                            //Noch Prios vorhanden ? Wenn nicht wird Student aus liste gelöscht
-                            if (!tmpStudent.hasPrioritys())
+                            //Noch Prios vorhanden ? Wenn nicht wird Student aus Liste gelöscht
+                            if (!tmpStudent.hasPrioritys() || tmpStudent.countCourses == 0)
                             {
-                                this.objStudentsListCopy.Students.Remove(tmpStudent);
+                                this.objStudentsListCopy.Students.RemoveAt(i);
                             }
 
                             p = tmpStudent.Prioritys.Count;//Nur ein Kurs pro Durchgang!
                         }
                     }
-                }
-                
+                }                
             }
 
             ++this.cCalculate;
 
             if (this.objStudentsListCopy.Students.Count > 0)
             {
-                if (this.cCalculate < 10)
+                if (this.cCalculate < this.maxCalculations)
                 {
                     this.calculate();
                 }        
@@ -82,9 +91,24 @@ namespace SetCoursesAlgo
         }
 
 
-        public void saveResult()
+        public List<DataTable> saveResult()
         {
-            
+            List<DataTable> dtCoursesOutput = new List<DataTable>();
+
+            foreach(Course tmpCourse in this.objCourseList.Courses){
+                DataTable dtTemp = new DataTable();
+                dtTemp.TableName = tmpCourse.Name;
+                dtTemp.Columns.Add("Platznummer");
+                dtTemp.Columns.Add("Studentenname");//TODO ID ?
+
+                for(int i = 0; i < tmpCourse.objStudents.Count; i++){
+                    dtTemp.Rows.Add(i, tmpCourse.objStudents[i].Name);
+                }
+
+                dtCoursesOutput.Add(dtTemp);
+            }
+
+            return dtCoursesOutput;
         }
     }    
 }

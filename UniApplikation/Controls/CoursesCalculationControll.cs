@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lib = SetCoursesAlgo.Models;
+using SetCoursesAlgo.Models;
 
 namespace UniApplikation.Controls
 {
@@ -22,7 +23,8 @@ namespace UniApplikation.Controls
         {        
             SetCoursesAlgo.Handler objHandler = new SetCoursesAlgo.Handler(Properties.Settings.Default.CoursesXMLPath, Properties.Settings.Default.StudentsXMLPath);
             objHandler.calculate();
-            objHandler.saveResult();
+            List<DataTable> objListDataTables = objHandler.saveResult();//Results of the Calculate in a List of DataTables
+            ExcelHandler.CreateExcelFile(objListDataTables, Properties.Settings.Default.OutputFilesPath);
         }
     }
 }

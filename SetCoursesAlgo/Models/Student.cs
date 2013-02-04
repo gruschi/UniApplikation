@@ -22,7 +22,7 @@ namespace SetCoursesAlgo.Models
         public string Group;///Places Left        
 
         [XmlElement("countCourses")]
-        public int countCourses;///How Many Courses does this Student need ?
+        public int countCourses;///How Many Courses does this Student STILL need ?                                      
        
         [XmlArray("PrioritysArray")]
         [XmlArrayItem("PriorityObject")]

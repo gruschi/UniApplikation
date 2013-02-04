@@ -61,5 +61,17 @@ namespace UniApplikation.Properties {
                 this["LogPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("../../OutputFiles/")]
+        public string OutputFilesPath {
+            get {
+                return ((string)(this["OutputFilesPath"]));
+            }
+            set {
+                this["OutputFilesPath"] = value;
+            }
+        }
     }
 }

@@ -14,5 +14,8 @@
     <Setting Name="LogPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">../../Log.txt</Value>
     </Setting>
+    <Setting Name="OutputFilesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">../../OutputFiles/</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
