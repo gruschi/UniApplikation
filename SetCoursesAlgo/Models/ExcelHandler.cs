@@ -97,11 +97,11 @@ namespace SetCoursesAlgo.Models
             range = xlWorkSheet.UsedRange;
               
             //Write all the Columns
-            int iColCount = dt.Columns.Count;
+            int iColCount = 0;
             foreach (DataColumn c in dt.Columns)           
             {
-                ++iColCount; 
-                xlApp.Cells[1, iColCount] = c.ColumnName;                
+                ++iColCount;                 
+                (range.Cells[1, iColCount] as Excel.Range).Value2 = c.ColumnName;
             }                
 
             // Now write all the rows.
@@ -110,8 +110,8 @@ namespace SetCoursesAlgo.Models
             {
                 int iCol = 0;
                 foreach (DataColumn c in dt.Columns)           
-                {
-                    xlApp.Cells[iRowIndex, iCol] = dr[iCol].ToString();                   
+                {                    
+                    (range.Cells[iRowIndex, iCol] as Excel.Range).Value2 = dr[iCol].ToString();
                     ++iCol;
                 }
 
