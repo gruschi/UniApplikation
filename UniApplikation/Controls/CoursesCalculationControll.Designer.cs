@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.startCalculation = new System.Windows.Forms.Button();
+            this.excelExport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // startCalculation
@@ -41,10 +42,22 @@
             this.startCalculation.UseVisualStyleBackColor = true;
             this.startCalculation.Click += new System.EventHandler(this.startCalculation_Click);
             // 
+            // excelExport
+            // 
+            this.excelExport.Enabled = false;
+            this.excelExport.Location = new System.Drawing.Point(4, 34);
+            this.excelExport.Name = "excelExport";
+            this.excelExport.Size = new System.Drawing.Size(157, 23);
+            this.excelExport.TabIndex = 1;
+            this.excelExport.Text = "Nach Excel exportieren";
+            this.excelExport.UseVisualStyleBackColor = true;
+            this.excelExport.Click += new System.EventHandler(this.excelExport_Click);
+            // 
             // CoursesCalculationControll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.excelExport);
             this.Controls.Add(this.startCalculation);
             this.Name = "CoursesCalculationControll";
             this.Size = new System.Drawing.Size(434, 150);
@@ -55,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button startCalculation;
+        private System.Windows.Forms.Button excelExport;
     }
 }

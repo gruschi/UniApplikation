@@ -41,17 +41,38 @@ namespace SetCoursesAlgo.Models
 
         public bool addStudent(Student objStudent)
         {
-            if (this.objStudents.Count >= iMaxPlaces)//Course full
+            if (!this.findStudent(objStudent) && objStudent.countCourses > 0)
             {
-                return false;
+                if (this.objStudents.Count >= iMaxPlaces)//Course full
+                {
+                    return false;
+                }
+                else
+                {
+                    this.objStudents.Add(objStudent);
+                    return true;
+                }
             }
             else
             {
-                this.objStudents.Add(objStudent);                
-                return true;
+                objStudent.Prioritys[objStudent.findPriorityIndex(this.Name)] = null;
+                --objStudent.countCourses;
+                return false;
+            }
+            
+        }
+
+        private bool findStudent(Student objStudent)
+        {
+            foreach (Student tmpStudent in this.objStudents)
+            {
+                if (objStudent.Equals(tmpStudent))
+                {
+                    return true;
+                }
             }
 
-            
+            return false;
         }
 
         public static Course getInstance(string key)

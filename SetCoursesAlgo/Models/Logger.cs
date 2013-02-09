@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SetCoursesAlgo.Models
 {
-    class Logger
+    public class Logger
     {
         private static string sLogPath = SetCoursesAlgo.Properties.Settings.Default.LogPath;
+        public static List<String> sMessages = new List<string>();
 
         public static void LogMessageToFile(string msg)
         {
@@ -16,6 +17,7 @@ namespace SetCoursesAlgo.Models
             try
             {
                 string logLine = System.String.Format( "{0:G}: {1}.", System.DateTime.Now, msg);
+                Logger.sMessages.Add(logLine);
                 sw.WriteLine(logLine);
             }
             finally

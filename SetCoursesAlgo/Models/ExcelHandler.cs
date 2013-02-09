@@ -91,7 +91,8 @@ namespace SetCoursesAlgo.Models
             Excel.Range range;
 
             xlApp = new Excel.Application();
-            xlApp.Visible = true;
+            xlApp.DisplayAlerts = false;//Fehler unterdrücken
+         //   xlApp.Visible = true;
             xlWorkBook = xlApp.Workbooks.Add(1);
             xlWorkSheet = (Excel.Worksheet)xlWorkBook.Sheets[1];
             range = xlWorkSheet.UsedRange;
@@ -101,30 +102,37 @@ namespace SetCoursesAlgo.Models
             foreach (DataColumn c in dt.Columns)           
             {
                 ++iColCount;                 
-                (range.Cells[1, iColCount] as Excel.Range).Value2 = c.ColumnName;
+                (range.Cells[1, iColCount]).Value2 = c.ColumnName;
             }                
 
             // Now write all the rows.
             int iRowIndex = 2;
             foreach (DataRow dr in dt.Rows)
-            {
-                int iCol = 0;
-                foreach (DataColumn c in dt.Columns)           
-                {                    
-                    (range.Cells[iRowIndex, iCol] as Excel.Range).Value2 = dr[iCol].ToString();
-                    ++iCol;
-                }
+            {                
+                for (int iCol = 1; iCol <= dt.Columns.Count; iCol++)
+                {
+                    (range.Cells[iRowIndex, iCol]).Value2 = dr[iCol-1].ToString();                    
+                }               
 
                 ++iRowIndex;
             }
 
             // Global missing reference for objects we are not defining...
             object missing = System.Reflection.Missing.Value;
+            string sSavePath = System.IO.Path.GetFullPath(strPathRelative) + dt.TableName;
 
-            xlWorkBook.SaveAs(strPathRelative + dt.TableName,
-                       Excel.XlFileFormat.xlXMLSpreadsheet, missing, missing,
-                       false, false, Excel.XlSaveAsAccessMode.xlNoChange,
-                       missing, missing, missing, missing, missing);
+            try
+            {
+                xlWorkBook.SaveAs(sSavePath,
+                           Excel.XlFileFormat.xlOpenXMLWorkbook, missing, missing,
+                           false, false, Excel.XlSaveAsAccessMode.xlNoChange,
+                           missing, missing, missing, missing, missing);
+
+            }
+            catch (Exception)
+            {
+                Logger.LogMessageToFile("Konnte die Datei " + dt.TableName + " nicht öffnen");
+            }
 
             Excel.Worksheet worksheet = (Excel.Worksheet)xlApp.ActiveSheet;
             ((Excel._Worksheet)worksheet).Activate();

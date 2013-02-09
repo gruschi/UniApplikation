@@ -125,5 +125,17 @@ namespace SetCoursesAlgo.Models
 
             return false;
         }
+
+        internal int findPriorityIndex(string courseName)
+        {
+            for(int i = 0; i < this.Prioritys.Count; i++){
+                if (this.Prioritys[i] != null && this.Prioritys[i].Value == courseName)
+                {
+                    return i;
+                }
+            }
+
+            return 99;//ToDo was machen wenn kurs nicht gefunden wird
+        }
     }
 }

@@ -15,9 +15,7 @@ namespace SetCoursesAlgo
 
 
         private StudentsList objStudensList;
-        private CoursesList objCourseList;
-
-        private StudentsList objStudentsListCopy;//Kopie aus welcher wir Daten löschen können ?
+        private CoursesList objCourseList;        
 
         private int cCalculate = 0;
         private int maxCalculations = Properties.Settings.Default.MaxCalculations;
@@ -29,8 +27,7 @@ namespace SetCoursesAlgo
 
             this.objStudensList = StudentsList.getListFromXML(Handler.sStudentXMLPath);
             this.objCourseList = CoursesList.getListFromXML(Handler.sCourseXMLPath);
-
-            this.objStudentsListCopy = objStudensList;
+            
             this.objCourseList.repair();
             this.cCalculate = 0;//Inital Set off calculate
         }
@@ -40,12 +37,15 @@ namespace SetCoursesAlgo
         /// </summary>
         /// <returns></returns>
         public bool calculate()
-        {            
-            this.objStudensList.Students.Shuffle();            
-
-            for (int i = this.objStudentsListCopy.Students.Count - 1; i >= 0; i--)
+        {
+            if (this.cCalculate == 0)//Nur einmal Shuffle
             {
-                Student tmpStudent = this.objStudentsListCopy.Students[i];
+                this.objStudensList.Students.Shuffle();
+            }
+
+            for (int i = this.objStudensList.Students.Count - 1; i >= 0; i--)
+            {
+                Student tmpStudent = this.objStudensList.Students[i];
 
                 for (int p = 0; p < tmpStudent.Prioritys.Count; p++)
                 {
@@ -56,23 +56,23 @@ namespace SetCoursesAlgo
                         if (selectedCourse.addStudent(tmpStudent))
                         {
                             tmpStudent.Prioritys[p] = null;
-                            --tmpStudent.countCourses;
-
-                            //Noch Prios vorhanden ? Wenn nicht wird Student aus Liste gelöscht
-                            if (!tmpStudent.hasPrioritys() || tmpStudent.countCourses == 0)
-                            {
-                                this.objStudentsListCopy.Students.RemoveAt(i);
-                            }
+                            --tmpStudent.countCourses;                         
 
                             p = tmpStudent.Prioritys.Count;//Nur ein Kurs pro Durchgang!
                         }
-                    }
-                }                
+                    }                    
+                }
+
+                //Noch Prios vorhanden ? Wenn nicht wird Student aus Liste gelöscht
+                if (!tmpStudent.hasPrioritys() || tmpStudent.countCourses == 0)
+                {
+                    this.objStudensList.Students.RemoveAt(i);
+                }
             }
 
             ++this.cCalculate;
 
-            if (this.objStudentsListCopy.Students.Count > 0)
+            if (this.objStudensList.Students.Count > 0)
             {
                 if (this.cCalculate < this.maxCalculations)
                 {
@@ -80,7 +80,7 @@ namespace SetCoursesAlgo
                 }        
             }
 
-            if (this.objStudentsListCopy.Students.Count == 0)
+            if (this.objStudensList.Students.Count == 0)
             {
                 return true;
             }
@@ -102,13 +102,31 @@ namespace SetCoursesAlgo
                 dtTemp.Columns.Add("Studentenname");//TODO ID ?
 
                 for(int i = 0; i < tmpCourse.objStudents.Count; i++){
-                    dtTemp.Rows.Add(i, tmpCourse.objStudents[i].Name);
+                    dtTemp.Rows.Add((i + 1), tmpCourse.objStudents[i].Name);
                 }
 
                 dtCoursesOutput.Add(dtTemp);
             }
 
             return dtCoursesOutput;
+        }
+
+        public DataTable getMissingStudents()
+        {
+            DataTable dtMissingStudents = new DataTable();//Students without courses
+                        
+            dtMissingStudents.TableName = "MissingStudents";
+            dtMissingStudents.Columns.Add("Number");
+            dtMissingStudents.Columns.Add("Studentenname");
+            dtMissingStudents.Columns.Add("MissingCourses");
+
+                for (int i = 0; i < this.objStudensList.Students.Count; i++)
+                {
+                    dtMissingStudents.Rows.Add((i + 1), this.objStudensList.Students[i].Name, this.objStudensList.Students[i].countCourses);
+                }
+
+                return dtMissingStudents;
+
         }
     }    
 }
