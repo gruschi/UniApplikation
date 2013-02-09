@@ -54,9 +54,7 @@ namespace SetCoursesAlgo.Models
                 }
             }
             else
-            {
-                objStudent.Prioritys[objStudent.findPriorityIndex(this.Name)] = null;
-                --objStudent.countCourses;
+            {                
                 return false;
             }
             

@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SetCoursesAlgo.Models;
 using UniApplikation.Controls;
-using SetCoursesAlgo.Models;
 
 namespace UniApplikation
 {

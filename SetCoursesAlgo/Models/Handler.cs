@@ -29,6 +29,7 @@ namespace SetCoursesAlgo
             this.objCourseList = CoursesList.getListFromXML(Handler.sCourseXMLPath);
             
             this.objCourseList.repair();
+            this.objStudensList.repair();
             this.cCalculate = 0;//Inital Set off calculate
         }
 
@@ -64,7 +65,7 @@ namespace SetCoursesAlgo
                 }
 
                 //Noch Prios vorhanden ? Wenn nicht wird Student aus Liste gelöscht
-                if (!tmpStudent.hasPrioritys() || tmpStudent.countCourses == 0)
+                if (!tmpStudent.hasPrioritys() || tmpStudent.countCourses <= 0)
                 {
                     this.objStudensList.Students.RemoveAt(i);
                 }

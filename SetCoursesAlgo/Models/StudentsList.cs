@@ -99,6 +99,17 @@ namespace SetCoursesAlgo.Models
 
             XMLHandler.SerializeObject<StudentsList>(this, sPath);
         }
+
+        /// <summary>
+        /// Löscht alle doppelten Prioritäten der Studenten
+        /// </summary>
+        internal void repair()
+        {
+            foreach (Student tmpStudent in this.Students)
+            {
+                tmpStudent.repairPrioritys();
+            }
+        }
     }
 
     /// <summary>

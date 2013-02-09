@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lib = SetCoursesAlgo.Models;
 using SetCoursesAlgo.Models;
+using System.Threading;
 
 namespace UniApplikation.Controls
 {
@@ -32,14 +33,26 @@ namespace UniApplikation.Controls
             {
                 MessageBox.Show(msg);
             }
+            Logger.sMessages.Clear();
 
         }    
 
         private void excelExport_Click(object sender, EventArgs e)
         {
-            List<DataTable> objListDataTables = this.objHandler.saveResult();//Results of the Calculate in a List of DataTables            
+            Thread oThread = new Thread(new ParameterizedThreadStart(createExcelLists));
+
+            oThread.Start(this.objHandler);
+        }
+
+        public void createExcelLists(object objHandler)
+        {
+            SetCoursesAlgo.Handler handler = (SetCoursesAlgo.Handler)objHandler;
+
+            List<DataTable> objListDataTables = handler.saveResult();//Results of the Calculate in a List of DataTables       
+            DataTable objMissingStudents = handler.getMissingStudents();        
+
             ExcelHandler.CreateExcelFile(objListDataTables, Properties.Settings.Default.OutputFilesPath);
-            DataTable objMissingStudents = this.objHandler.getMissingStudents();
+            
             ExcelHandler.CreateExcelFile(objMissingStudents, Properties.Settings.Default.OutputFilesPath);//Students without courses
 
             MessageBox.Show("Die Excellisten wurden erstellt");
@@ -49,6 +62,7 @@ namespace UniApplikation.Controls
             {
                 MessageBox.Show(msg);
             }
+            Logger.sMessages.Clear();
         }
 
 

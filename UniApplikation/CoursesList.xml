@@ -5,29 +5,29 @@
     <CourseObjekt>
       <Name>WPM1</Name>
       <Lecturer>Prof1</Lecturer>
-      <Places>25</Places>
-      <iMaxPlaces>25</iMaxPlaces>
+      <Places>50</Places>
+      <iMaxPlaces>50</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>
       <Name>WPM2</Name>
       <Lecturer>Prof2</Lecturer>
-      <Places>30</Places>
-      <iMaxPlaces>30</iMaxPlaces>
+      <Places>50</Places>
+      <iMaxPlaces>50</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>
       <Name>WPM3</Name>
       <Lecturer>Prof5</Lecturer>
-      <Places>20</Places>
-      <iMaxPlaces>20</iMaxPlaces>
+      <Places>70</Places>
+      <iMaxPlaces>70</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>
       <Name>WPM4</Name>
       <Lecturer>Prof7</Lecturer>
-      <Places>30</Places>
-      <iMaxPlaces>30</iMaxPlaces>
+      <Places>50</Places>
+      <iMaxPlaces>50</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>

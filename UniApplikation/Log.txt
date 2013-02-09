@@ -1,0 +1,2 @@
+09.02.2013 12:48:07: Konnte die Datei MissingStudents nicht öffnen.
+09.02.2013 13:22:33: ERROR AT STUDENT COUNT COURSES FORMAT ID:79pD9lN4QAttEsWK32CEIekokzI@hm.edu.

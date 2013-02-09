@@ -77,21 +77,21 @@ namespace SetCoursesAlgo.Models
         /// </summary>
         /// <param name="student">Student what shall override</param>
         public void addPrioritys(Student student)
-        {
-            for(int i = 0; i < student.Prioritys.Count; i++){
+        {            
+            for(int i = 0; i < student.Prioritys.Count; i++){           
                 if (student.Prioritys[i] != null && student.Prioritys[i].Value.Length > 0 && student.Prioritys[i].Value != "Noch nicht abgestimmt")
+                {
+                    if (this.Prioritys.Count >= student.Prioritys[i].Prio)
                     {
-                        if (this.Prioritys.Count >= student.Prioritys[i].Prio)
-                        {
-                            this.Prioritys.Add(student.Prioritys[i]);
-                        }
-                        else
-                        {
-                            this.Prioritys[student.Prioritys[i].Prio] = student.Prioritys[i];
-                        }
-
-                        
+                        this.Prioritys.Add(student.Prioritys[i]);
                     }
+                    else
+                    {
+                        this.Prioritys[student.Prioritys[i].Prio] = student.Prioritys[i];
+                    }
+
+
+                }                
             }                        
         }
 
@@ -136,6 +136,36 @@ namespace SetCoursesAlgo.Models
             }
 
             return 99;//ToDo was machen wenn kurs nicht gefunden wird
+        }
+
+        /// <summary>
+        /// Löscht alle doppelten Prioritäten
+        /// </summary>
+        internal void repairPrioritys()
+        {
+            List<Priority> newPriorityList = new List<Priority>();            
+
+            foreach (Priority tmpPrio in this.Prioritys)
+            {
+                if (tmpPrio != null && !this.hasValueInList(newPriorityList, tmpPrio.Value))
+                {
+                    newPriorityList.Add(tmpPrio);
+                }
+            }
+
+            this.Prioritys = newPriorityList;
+        }
+
+        private bool hasValueInList(List<Priority> list, string courseName)
+        {
+            for(int i = 0; i < list.Count; i++){
+                if (list[i].Value == courseName)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
