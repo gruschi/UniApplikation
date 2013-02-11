@@ -59,5 +59,10 @@ namespace UniApplikation
             this.contentPanelDefault.Controls.Add(new CoursesCalculationControll());
             this.contentPanelDefault.Update();
         }
+
+        private void schließenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

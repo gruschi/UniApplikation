@@ -40,11 +40,11 @@
             this.kurseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verwaltenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.einfügenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.berechnenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusExcellists = new System.Windows.Forms.ToolStripStatusLabel();
             this.contentPanelDefault = new System.Windows.Forms.Panel();
-            this.berechnenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -73,22 +73,25 @@
             // 
             // speichernToolStripMenuItem
             // 
+            this.speichernToolStripMenuItem.Enabled = false;
             this.speichernToolStripMenuItem.Name = "speichernToolStripMenuItem";
-            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.speichernToolStripMenuItem.Text = "Speichern";
             this.speichernToolStripMenuItem.Click += new System.EventHandler(this.speichernToolStripMenuItem_Click);
             // 
             // öffnenToolStripMenuItem
             // 
+            this.öffnenToolStripMenuItem.Enabled = false;
             this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-            this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.öffnenToolStripMenuItem.Text = "Öffnen";
             // 
             // schließenToolStripMenuItem
             // 
             this.schließenToolStripMenuItem.Name = "schließenToolStripMenuItem";
-            this.schließenToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.schließenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.schließenToolStripMenuItem.Text = "Schließen";
+            this.schließenToolStripMenuItem.Click += new System.EventHandler(this.schließenToolStripMenuItem_Click);
             // 
             // bearbeitenToolStripMenuItem
             // 
@@ -109,12 +112,14 @@
             // 
             // excellistenBearbeitenToolStripMenuItem
             // 
+            this.excellistenBearbeitenToolStripMenuItem.Enabled = false;
             this.excellistenBearbeitenToolStripMenuItem.Name = "excellistenBearbeitenToolStripMenuItem";
             this.excellistenBearbeitenToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.excellistenBearbeitenToolStripMenuItem.Text = "Excellisten bearbeiten";
             // 
             // sucheToolStripMenuItem
             // 
+            this.sucheToolStripMenuItem.Enabled = false;
             this.sucheToolStripMenuItem.Name = "sucheToolStripMenuItem";
             this.sucheToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.sucheToolStripMenuItem.Text = "Suche";
@@ -141,6 +146,13 @@
             this.einfügenToolStripMenuItem.Name = "einfügenToolStripMenuItem";
             this.einfügenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.einfügenToolStripMenuItem.Text = "Einfügen";
+            // 
+            // berechnenToolStripMenuItem
+            // 
+            this.berechnenToolStripMenuItem.Name = "berechnenToolStripMenuItem";
+            this.berechnenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.berechnenToolStripMenuItem.Text = "Berechnen";
+            this.berechnenToolStripMenuItem.Click += new System.EventHandler(this.berechnenToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -171,13 +183,6 @@
             this.contentPanelDefault.Name = "contentPanelDefault";
             this.contentPanelDefault.Size = new System.Drawing.Size(856, 392);
             this.contentPanelDefault.TabIndex = 2;
-            // 
-            // berechnenToolStripMenuItem
-            // 
-            this.berechnenToolStripMenuItem.Name = "berechnenToolStripMenuItem";
-            this.berechnenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.berechnenToolStripMenuItem.Text = "Berechnen";
-            this.berechnenToolStripMenuItem.Click += new System.EventHandler(this.berechnenToolStripMenuItem_Click);
             // 
             // UniApplikation
             // 
