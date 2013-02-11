@@ -26,14 +26,14 @@ namespace UniApplikation.Controls
         {        
             this.objHandler = new SetCoursesAlgo.Handler(Properties.Settings.Default.CoursesXMLPath, Properties.Settings.Default.StudentsXMLPath);
             this.objHandler.calculate();
-            this.excelExport.Enabled = true;
+            this.excelExport.Enabled = true;           
 
             //TODO Ausgabe von Fehlern;
             foreach (string msg in Logger.sMessages)
             {
                 MessageBox.Show(msg);
             }
-            Logger.sMessages.Clear();
+            Logger.sMessages.Clear();            
 
         }    
 
@@ -63,6 +63,9 @@ namespace UniApplikation.Controls
                 MessageBox.Show(msg);
             }
             Logger.sMessages.Clear();
+
+            //Exportiere Zusammenfassung
+            handler.exportReport(Properties.Settings.Default.OutputFilesPath);
         }
 
 

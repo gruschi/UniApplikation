@@ -167,5 +167,17 @@ namespace SetCoursesAlgo.Models
 
             return false;
         }
+
+        internal string getPrio(int prio)
+        {
+            if (this.Prioritys[prio] != null)
+            {
+                return this.Prioritys[prio].Value;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

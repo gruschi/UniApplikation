@@ -129,5 +129,64 @@ namespace SetCoursesAlgo
                 return dtMissingStudents;
 
         }
+
+        public void exportReport(string outputPath)
+        {
+            DataTable dtReport = this.saveReport();
+
+            ExcelHandler.CreateExcelFile(dtReport, outputPath);
+        }
+
+        /// <summary>
+        /// Generiert einen Report über alle Studente mit Ihren gewählten Kursen und bekommenen Kursen
+        /// </summary>
+        /// <returns></returns>
+        private DataTable saveReport()
+        {
+            StudentsList studentList = StudentsList.getListFromXML(Handler.sStudentXMLPath);
+
+            //Erstellen der DataTable für den Report
+            DataTable dtReport = new DataTable();
+            dtReport.TableName = "Report";
+            dtReport.Columns.Add("ID");
+            dtReport.Columns.Add("Student");
+            dtReport.Columns.Add("Wahl 1");
+            dtReport.Columns.Add("Wahl 2");
+            dtReport.Columns.Add("Wahl 3");
+            dtReport.Columns.Add("Wahl 4");
+            dtReport.Columns.Add("Wahl 5");
+            dtReport.Columns.Add("Wahl 6");
+            dtReport.Columns.Add("Kurs 1");
+            dtReport.Columns.Add("Kurs 2");
+            dtReport.Columns.Add("Kurs 3");
+            dtReport.Columns.Add("Kurs 4");
+            dtReport.Columns.Add("Kurs 5");
+
+            foreach (Student tmpStudent in studentList.Students)
+            {
+                List<string> sStudentCourses = this.objCourseList.findCoursesFromStudent(tmpStudent.ID);
+
+                for(int i = 0; i < 5; i++){
+                    if( i >= sStudentCourses.Count){
+                        sStudentCourses.Add(null);
+                    }
+                }
+
+                dtReport.Rows.Add(tmpStudent.ID, tmpStudent.Name,
+                                tmpStudent.getPrio(0),
+                                tmpStudent.getPrio(1),
+                                tmpStudent.getPrio(2),
+                                tmpStudent.getPrio(3),
+                                tmpStudent.getPrio(4),
+                                tmpStudent.getPrio(5),
+                                sStudentCourses[0],
+                                sStudentCourses[1],
+                                sStudentCourses[2],
+                                sStudentCourses[3],
+                                sStudentCourses[4]);
+            }
+
+            return dtReport;
+        }
     }    
 }

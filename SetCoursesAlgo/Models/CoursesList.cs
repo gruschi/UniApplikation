@@ -96,5 +96,23 @@ namespace SetCoursesAlgo.Models
 
             return tmpCourseList;
         }
+
+        public List<string> findCoursesFromStudent(string sStudentID)
+        {
+            List<string> objCourseList = new List<string>();
+
+            foreach (Course tmpCourse in this.Courses)
+            {
+                foreach (Student tmpStudent in tmpCourse.objStudents)
+                {
+                    if (tmpStudent.ID == sStudentID)
+                    {
+                        objCourseList.Add(tmpCourse.Name);
+                    }
+                }
+            }
+
+            return objCourseList;
+        }
     }
 }
