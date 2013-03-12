@@ -8,6 +8,7 @@
       <Surname>David</Surname>
       <Group />
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
         <PriorityObject xsi:nil="true" />
         <PriorityObject>
@@ -42,6 +43,14 @@
           <Priority>5</Priority>
           <Value>WPM8</Value>
         </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM7</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM8</Value>
+        </PriorityObject>
       </PrioritysArray>
     </StudentsObjekt>
     <StudentsObjekt>
@@ -50,6 +59,7 @@
       <Surname>Joerg</Surname>
       <Group />
       <countCourses>0</countCourses>
+      <maxCourses>0</maxCourses>
       <PrioritysArray>
         <PriorityObject xsi:nil="true" />
         <PriorityObject xsi:nil="true" />
@@ -65,6 +75,7 @@
       <Surname>Matthias Alexander</Surname>
       <Group />
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
         <PriorityObject>
           <Priority>0</Priority>
@@ -87,6 +98,26 @@
           <Value>WPM2</Value>
         </PriorityObject>
         <PriorityObject xsi:nil="true" />
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM7</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>2</Priority>
           <Value>WPM2</Value>
@@ -127,6 +158,7 @@
       <Surname>Manuel</Surname>
       <Group />
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
         <PriorityObject>
           <Priority>0</Priority>
@@ -146,6 +178,22 @@
           <Value>WPM7</Value>
         </PriorityObject>
         <PriorityObject xsi:nil="true" />
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM7</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>2</Priority>
           <Value>WPM4</Value>
@@ -181,7 +229,32 @@
       <Name>Student1</Name>
       <Surname>Vorname1</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -237,7 +310,32 @@
       <Name>Student2</Name>
       <Surname>Vorname2</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -293,7 +391,32 @@
       <Name>Student3</Name>
       <Surname>Vorname3</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -349,7 +472,32 @@
       <Name>Student4</Name>
       <Surname>Vorname4</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -405,7 +553,32 @@
       <Name>Student5</Name>
       <Surname>Vorname5</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -461,7 +634,32 @@
       <Name>Student6</Name>
       <Surname>Vorname6</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -517,7 +715,32 @@
       <Name>Student7</Name>
       <Surname>Vorname7</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -573,7 +796,32 @@
       <Name>Student8</Name>
       <Surname>Vorname8</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -629,7 +877,32 @@
       <Name>Student9</Name>
       <Surname>Vorname9</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -685,7 +958,32 @@
       <Name>Student10</Name>
       <Surname>Vorname10</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -741,7 +1039,32 @@
       <Name>Student11</Name>
       <Surname>Vorname11</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -797,7 +1120,32 @@
       <Name>Student12</Name>
       <Surname>Vorname12</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -853,7 +1201,32 @@
       <Name>Student13</Name>
       <Surname>Vorname13</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -909,7 +1282,32 @@
       <Name>Student14</Name>
       <Surname>Vorname14</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -965,7 +1363,32 @@
       <Name>Student15</Name>
       <Surname>Vorname15</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -1021,7 +1444,32 @@
       <Name>Student16</Name>
       <Surname>Vorname16</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -1077,7 +1525,32 @@
       <Name>Student17</Name>
       <Surname>Vorname17</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -1133,7 +1606,32 @@
       <Name>Student18</Name>
       <Surname>Vorname18</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -1189,7 +1687,32 @@
       <Name>Student19</Name>
       <Surname>Vorname19</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -1245,7 +1768,32 @@
       <Name>Student20</Name>
       <Surname>Vorname20</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -1301,7 +1849,32 @@
       <Name>Student21</Name>
       <Surname>Vorname21</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -1357,7 +1930,32 @@
       <Name>Student22</Name>
       <Surname>Vorname22</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -1413,7 +2011,32 @@
       <Name>Student23</Name>
       <Surname>Vorname23</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -1469,7 +2092,32 @@
       <Name>Student24</Name>
       <Surname>Vorname24</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -1525,7 +2173,32 @@
       <Name>Student25</Name>
       <Surname>Vorname25</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -1581,7 +2254,32 @@
       <Name>Student26</Name>
       <Surname>Vorname26</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -1637,7 +2335,32 @@
       <Name>Student27</Name>
       <Surname>Vorname27</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -1693,7 +2416,32 @@
       <Name>Student28</Name>
       <Surname>Vorname28</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -1749,7 +2497,32 @@
       <Name>Student29</Name>
       <Surname>Vorname29</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -1805,7 +2578,32 @@
       <Name>Student30</Name>
       <Surname>Vorname30</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -1861,7 +2659,32 @@
       <Name>Student31</Name>
       <Surname>Vorname31</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -1917,7 +2740,32 @@
       <Name>Student32</Name>
       <Surname>Vorname32</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -1973,7 +2821,32 @@
       <Name>Student33</Name>
       <Surname>Vorname33</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -2029,7 +2902,32 @@
       <Name>Student34</Name>
       <Surname>Vorname34</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -2085,7 +2983,32 @@
       <Name>Student35</Name>
       <Surname>Vorname35</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -2141,7 +3064,32 @@
       <Name>Student36</Name>
       <Surname>Vorname36</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -2197,7 +3145,32 @@
       <Name>Student37</Name>
       <Surname>Vorname37</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -2253,7 +3226,32 @@
       <Name>Student38</Name>
       <Surname>Vorname38</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -2309,7 +3307,32 @@
       <Name>Student39</Name>
       <Surname>Vorname39</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -2365,7 +3388,32 @@
       <Name>Student40</Name>
       <Surname>Vorname40</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -2421,7 +3469,32 @@
       <Name>Student41</Name>
       <Surname>Vorname41</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -2477,7 +3550,32 @@
       <Name>Student42</Name>
       <Surname>Vorname42</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -2533,7 +3631,32 @@
       <Name>Student43</Name>
       <Surname>Vorname43</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -2589,7 +3712,32 @@
       <Name>Student44</Name>
       <Surname>Vorname44</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -2645,7 +3793,32 @@
       <Name>Student45</Name>
       <Surname>Vorname45</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -2701,7 +3874,32 @@
       <Name>Student46</Name>
       <Surname>Vorname46</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -2757,7 +3955,32 @@
       <Name>Student47</Name>
       <Surname>Vorname47</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -2813,7 +4036,32 @@
       <Name>Student48</Name>
       <Surname>Vorname48</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -2869,7 +4117,32 @@
       <Name>Student49</Name>
       <Surname>Vorname49</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -2925,7 +4198,32 @@
       <Name>Student50</Name>
       <Surname>Vorname50</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -2981,7 +4279,32 @@
       <Name>Student51</Name>
       <Surname>Vorname51</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3037,7 +4360,32 @@
       <Name>Student52</Name>
       <Surname>Vorname52</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -3093,7 +4441,32 @@
       <Name>Student53</Name>
       <Surname>Vorname53</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3149,7 +4522,32 @@
       <Name>Student54</Name>
       <Surname>Vorname54</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -3205,7 +4603,32 @@
       <Name>Student55</Name>
       <Surname>Vorname55</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3261,7 +4684,32 @@
       <Name>Student56</Name>
       <Surname>Vorname56</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -3317,7 +4765,32 @@
       <Name>Student57</Name>
       <Surname>Vorname57</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -3373,7 +4846,32 @@
       <Name>Student58</Name>
       <Surname>Vorname58</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3429,7 +4927,32 @@
       <Name>Student59</Name>
       <Surname>Vorname59</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -3485,7 +5008,32 @@
       <Name>Student60</Name>
       <Surname>Vorname60</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3541,7 +5089,32 @@
       <Name>Student61</Name>
       <Surname>Vorname61</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -3597,7 +5170,32 @@
       <Name>Student62</Name>
       <Surname>Vorname62</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3653,7 +5251,32 @@
       <Name>Student63</Name>
       <Surname>Vorname63</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -3709,7 +5332,32 @@
       <Name>Student64</Name>
       <Surname>Vorname64</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -3765,7 +5413,32 @@
       <Name>Student65</Name>
       <Surname>Vorname65</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM4</Value>
@@ -3821,7 +5494,32 @@
       <Name>Student66</Name>
       <Surname>Vorname66</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -3877,7 +5575,32 @@
       <Name>Student67</Name>
       <Surname>Vorname67</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -3933,7 +5656,32 @@
       <Name>Student68</Name>
       <Surname>Vorname68</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -3989,7 +5737,32 @@
       <Name>Student69</Name>
       <Surname>Vorname69</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM4</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -4045,7 +5818,32 @@
       <Name>Student70</Name>
       <Surname>Vorname70</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -4101,7 +5899,32 @@
       <Name>Student71</Name>
       <Surname>Vorname71</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -4157,7 +5980,32 @@
       <Name>Student72</Name>
       <Surname>Vorname72</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -4213,7 +6061,32 @@
       <Name>Student73</Name>
       <Surname>Vorname73</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -4269,7 +6142,32 @@
       <Name>Student74</Name>
       <Surname>Vorname74</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -4325,7 +6223,32 @@
       <Name>Student75</Name>
       <Surname>Vorname75</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -4381,7 +6304,32 @@
       <Name>Student76</Name>
       <Surname>Vorname76</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -4437,7 +6385,32 @@
       <Name>Student77</Name>
       <Surname>Vorname77</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -4493,7 +6466,32 @@
       <Name>Student78</Name>
       <Surname>Vorname78</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -4549,7 +6547,32 @@
       <Name>Student79</Name>
       <Surname>Vorname79</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -4605,7 +6628,32 @@
       <Name>Student80</Name>
       <Surname>Vorname80</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -4661,7 +6709,32 @@
       <Name>Student81</Name>
       <Surname>Vorname81</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -4717,7 +6790,32 @@
       <Name>Student82</Name>
       <Surname>Vorname82</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -4773,7 +6871,32 @@
       <Name>Student83</Name>
       <Surname>Vorname83</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -4829,7 +6952,32 @@
       <Name>Student84</Name>
       <Surname>Vorname84</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -4885,7 +7033,32 @@
       <Name>Student85</Name>
       <Surname>Vorname85</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -4941,7 +7114,32 @@
       <Name>Student86</Name>
       <Surname>Vorname86</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -4997,7 +7195,32 @@
       <Name>Student87</Name>
       <Surname>Vorname87</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5053,7 +7276,32 @@
       <Name>Student88</Name>
       <Surname>Vorname88</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -5109,7 +7357,32 @@
       <Name>Student89</Name>
       <Surname>Vorname89</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5165,7 +7438,32 @@
       <Name>Student90</Name>
       <Surname>Vorname90</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5221,7 +7519,32 @@
       <Name>Student91</Name>
       <Surname>Vorname91</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5277,7 +7600,32 @@
       <Name>Student92</Name>
       <Surname>Vorname92</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -5333,7 +7681,32 @@
       <Name>Student93</Name>
       <Surname>Vorname93</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -5389,7 +7762,32 @@
       <Name>Student94</Name>
       <Surname>Vorname94</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5445,7 +7843,32 @@
       <Name>Student95</Name>
       <Surname>Vorname95</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -5501,7 +7924,32 @@
       <Name>Student96</Name>
       <Surname>Vorname96</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -5557,7 +8005,32 @@
       <Name>Student97</Name>
       <Surname>Vorname97</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -5613,7 +8086,32 @@
       <Name>Student98</Name>
       <Surname>Vorname98</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5669,7 +8167,32 @@
       <Name>Student99</Name>
       <Surname>Vorname99</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -5725,7 +8248,32 @@
       <Name>Student100</Name>
       <Surname>Vorname100</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5781,7 +8329,32 @@
       <Name>Student101</Name>
       <Surname>Vorname101</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -5837,7 +8410,32 @@
       <Name>Student102</Name>
       <Surname>Vorname102</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -5893,7 +8491,32 @@
       <Name>Student103</Name>
       <Surname>Vorname103</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -5949,7 +8572,32 @@
       <Name>Student104</Name>
       <Surname>Vorname104</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -6005,7 +8653,32 @@
       <Name>Student105</Name>
       <Surname>Vorname105</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -6061,7 +8734,32 @@
       <Name>Student106</Name>
       <Surname>Vorname106</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -6117,7 +8815,32 @@
       <Name>Student107</Name>
       <Surname>Vorname107</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -6173,7 +8896,32 @@
       <Name>Student108</Name>
       <Surname>Vorname108</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -6229,7 +8977,32 @@
       <Name>Student109</Name>
       <Surname>Vorname109</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -6285,7 +9058,32 @@
       <Name>Student110</Name>
       <Surname>Vorname110</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -6341,7 +9139,32 @@
       <Name>Student111</Name>
       <Surname>Vorname111</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -6397,7 +9220,32 @@
       <Name>Student112</Name>
       <Surname>Vorname112</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -6453,7 +9301,32 @@
       <Name>Student113</Name>
       <Surname>Vorname113</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -6509,7 +9382,32 @@
       <Name>Student114</Name>
       <Surname>Vorname114</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -6565,7 +9463,32 @@
       <Name>Student115</Name>
       <Surname>Vorname115</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -6621,7 +9544,32 @@
       <Name>Student116</Name>
       <Surname>Vorname116</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -6677,7 +9625,32 @@
       <Name>Student117</Name>
       <Surname>Vorname117</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -6733,7 +9706,32 @@
       <Name>Student118</Name>
       <Surname>Vorname118</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -6789,7 +9787,32 @@
       <Name>Student119</Name>
       <Surname>Vorname119</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -6845,7 +9868,32 @@
       <Name>Student120</Name>
       <Surname>Vorname120</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -6901,7 +9949,32 @@
       <Name>Student121</Name>
       <Surname>Vorname121</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -6957,7 +10030,32 @@
       <Name>Student122</Name>
       <Surname>Vorname122</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7013,7 +10111,32 @@
       <Name>Student123</Name>
       <Surname>Vorname123</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7069,7 +10192,32 @@
       <Name>Student124</Name>
       <Surname>Vorname124</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -7125,7 +10273,32 @@
       <Name>Student125</Name>
       <Surname>Vorname125</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7181,7 +10354,32 @@
       <Name>Student126</Name>
       <Surname>Vorname126</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM5</Value>
@@ -7237,7 +10435,32 @@
       <Name>Student127</Name>
       <Surname>Vorname127</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -7293,7 +10516,32 @@
       <Name>Student128</Name>
       <Surname>Vorname128</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -7349,7 +10597,32 @@
       <Name>Student129</Name>
       <Surname>Vorname129</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -7405,7 +10678,32 @@
       <Name>Student130</Name>
       <Surname>Vorname130</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7461,7 +10759,32 @@
       <Name>Student131</Name>
       <Surname>Vorname131</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM3</Value>
@@ -7517,7 +10840,32 @@
       <Name>Student132</Name>
       <Surname>Vorname132</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -7573,7 +10921,32 @@
       <Name>Student133</Name>
       <Surname>Vorname133</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7629,7 +11002,32 @@
       <Name>Student134</Name>
       <Surname>Vorname134</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -7685,7 +11083,32 @@
       <Name>Student135</Name>
       <Surname>Vorname135</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7741,7 +11164,32 @@
       <Name>Student136</Name>
       <Surname>Vorname136</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -7797,7 +11245,32 @@
       <Name>Student137</Name>
       <Surname>Vorname137</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7853,7 +11326,32 @@
       <Name>Student138</Name>
       <Surname>Vorname138</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -7909,7 +11407,32 @@
       <Name>Student139</Name>
       <Surname>Vorname139</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM5</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -7965,7 +11488,32 @@
       <Name>Student140</Name>
       <Surname>Vorname140</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -8021,7 +11569,32 @@
       <Name>Student141</Name>
       <Surname>Vorname141</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -8077,7 +11650,32 @@
       <Name>Student142</Name>
       <Surname>Vorname142</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM3</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -8133,7 +11731,32 @@
       <Name>Student143</Name>
       <Surname>Vorname143</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -8189,7 +11812,32 @@
       <Name>Student144</Name>
       <Surname>Vorname144</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM1</Value>
@@ -8245,7 +11893,32 @@
       <Name>Student145</Name>
       <Surname>Vorname145</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -8301,7 +11974,32 @@
       <Name>Student146</Name>
       <Surname>Vorname146</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -8357,7 +12055,32 @@
       <Name>Student147</Name>
       <Surname>Vorname147</Surname>
       <countCourses>3</countCourses>
+      <maxCourses>3</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>
@@ -8413,7 +12136,32 @@
       <Name>Student148</Name>
       <Surname>Vorname148</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM1</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -8469,7 +12217,32 @@
       <Name>Student149</Name>
       <Surname>Vorname149</Surname>
       <countCourses>1</countCourses>
+      <maxCourses>1</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM2</Value>
@@ -8525,7 +12298,32 @@
       <Name>Student150</Name>
       <Surname>Vorname150</Surname>
       <countCourses>2</countCourses>
+      <maxCourses>2</maxCourses>
       <PrioritysArray>
+        <PriorityObject>
+          <Priority>0</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>1</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>2</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>3</Priority>
+          <Value>WPM2</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>4</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
+        <PriorityObject>
+          <Priority>5</Priority>
+          <Value>WPM6</Value>
+        </PriorityObject>
         <PriorityObject>
           <Priority>0</Priority>
           <Value>WPM6</Value>

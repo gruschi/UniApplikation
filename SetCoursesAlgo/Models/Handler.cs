@@ -118,12 +118,14 @@ namespace SetCoursesAlgo
                         
             dtMissingStudents.TableName = "MissingStudents";
             dtMissingStudents.Columns.Add("Number");
-            dtMissingStudents.Columns.Add("Studentenname");
-            dtMissingStudents.Columns.Add("MissingCourses");
+            dtMissingStudents.Columns.Add("Nachname");
+            dtMissingStudents.Columns.Add("Vorname");
+            dtMissingStudents.Columns.Add("Nicht bekommene Kurse");
+            dtMissingStudents.Columns.Add("Bedarf an Kursen");
 
                 for (int i = 0; i < this.objStudensList.Students.Count; i++)
                 {
-                    dtMissingStudents.Rows.Add((i + 1), this.objStudensList.Students[i].Name, this.objStudensList.Students[i].countCourses);
+                    dtMissingStudents.Rows.Add((i + 1), this.objStudensList.Students[i].Name, this.objStudensList.Students[i].Surname, this.objStudensList.Students[i].countCourses, this.objStudensList.Students[i].maxCourses);
                 }
 
                 return dtMissingStudents;
@@ -161,6 +163,7 @@ namespace SetCoursesAlgo
             dtReport.Columns.Add("Kurs 3");
             dtReport.Columns.Add("Kurs 4");
             dtReport.Columns.Add("Kurs 5");
+            dtReport.Columns.Add("Bedarf");
 
             foreach (Student tmpStudent in studentList.Students)
             {
@@ -183,7 +186,8 @@ namespace SetCoursesAlgo
                                 sStudentCourses[1],
                                 sStudentCourses[2],
                                 sStudentCourses[3],
-                                sStudentCourses[4]);
+                                sStudentCourses[4],
+                                tmpStudent.maxCourses);
             }
 
             return dtReport;

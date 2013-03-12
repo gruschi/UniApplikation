@@ -49,7 +49,7 @@ namespace SetCoursesAlgo.Models
                 }
                 else
                 {
-                    this.objStudents.Add(objStudent);
+                    this.objStudents.Add(objStudent);                    
                     return true;
                 }
             }

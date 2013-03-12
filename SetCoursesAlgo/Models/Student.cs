@@ -22,7 +22,10 @@ namespace SetCoursesAlgo.Models
         public string Group;///Places Left        
 
         [XmlElement("countCourses")]
-        public int countCourses;///How Many Courses does this Student STILL need ?                                      
+        public int countCourses;///How Many Courses does this Student STILL need ?    
+
+        [XmlElement("maxCourses")]
+        public int maxCourses;///How Many Courses did the Student got already
        
         [XmlArray("PrioritysArray")]
         [XmlArrayItem("PriorityObject")]
@@ -52,6 +55,7 @@ namespace SetCoursesAlgo.Models
                 try
                 {
                     this.countCourses = Convert.ToInt32(sAnswer);
+                    this.maxCourses = Convert.ToInt32(sAnswer);
                 }
                 catch (FormatException)
                 {
