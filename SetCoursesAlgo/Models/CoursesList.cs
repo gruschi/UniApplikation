@@ -91,7 +91,14 @@ namespace SetCoursesAlgo.Models
 
 
             foreach(DataRow tmpRow in objDT.Rows){
-                tmpCourseList.Add(new Course(tmpRow["Name"].ToString(), tmpRow["Lecturer"].ToString(), Convert.ToInt32(tmpRow["Places"])));
+                try
+                {
+                    tmpCourseList.Add(new Course(tmpRow["Name"].ToString(), tmpRow["Lecturer"].ToString(), Convert.ToInt32(tmpRow["Places"])));
+                }
+                catch (InvalidCastException)
+                {
+
+                }
             }
 
             return tmpCourseList;

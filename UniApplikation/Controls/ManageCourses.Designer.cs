@@ -40,14 +40,12 @@ namespace UniApplikation.Controls
             this.DgVCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgVCourses.Location = new System.Drawing.Point(0, 0);
             this.DgVCourses.Name = "DgVCourses";
-            this.DgVCourses.Size = new System.Drawing.Size(314, 182);
+            this.DgVCourses.Size = new System.Drawing.Size(428, 267);
             this.DgVCourses.TabIndex = 0;
-            //this.DgVCourses.DataSource = new App.Classes.CoursesList().getDataTable();
-            //this.DgVCourses.DataSource = CoursesList.getListFromXML(Properties.Settings.Default.CoursesXMLPath).getDataTable();
             // 
             // saveCourseList
             // 
-            this.saveCourseList.Location = new System.Drawing.Point(3, 188);
+            this.saveCourseList.Location = new System.Drawing.Point(3, 273);
             this.saveCourseList.Name = "saveCourseList";
             this.saveCourseList.Size = new System.Drawing.Size(75, 23);
             this.saveCourseList.TabIndex = 1;
@@ -62,7 +60,7 @@ namespace UniApplikation.Controls
             this.Controls.Add(this.saveCourseList);
             this.Controls.Add(this.DgVCourses);
             this.Name = "ManageCourses";
-            this.Size = new System.Drawing.Size(466, 243);
+            this.Size = new System.Drawing.Size(623, 367);
             ((System.ComponentModel.ISupportInitialize)(this.DgVCourses)).EndInit();
             this.ResumeLayout(false);
 

@@ -3,73 +3,262 @@
   <Listenbezeichner>Kursliste</Listenbezeichner>
   <CoursesArray>
     <CourseObjekt>
-      <Name>WPM1</Name>
+      <Name>Business Software - Ammane</Name>
       <Lecturer>Prof1</Lecturer>
-      <Places>50</Places>
-      <iMaxPlaces>50</iMaxPlaces>
-      <objStudents />
-    </CourseObjekt>
-    <CourseObjekt>
-      <Name>WPM2</Name>
-      <Lecturer>Prof2</Lecturer>
-      <Places>50</Places>
-      <iMaxPlaces>50</iMaxPlaces>
-      <objStudents />
-    </CourseObjekt>
-    <CourseObjekt>
-      <Name>WPM3</Name>
-      <Lecturer>Prof5</Lecturer>
-      <Places>70</Places>
-      <iMaxPlaces>70</iMaxPlaces>
-      <objStudents />
-    </CourseObjekt>
-    <CourseObjekt>
-      <Name>WPM4</Name>
-      <Lecturer>Prof7</Lecturer>
-      <Places>50</Places>
-      <iMaxPlaces>50</iMaxPlaces>
-      <objStudents />
-    </CourseObjekt>
-    <CourseObjekt>
-      <Name>WPM5</Name>
-      <Lecturer>Prof5</Lecturer>
-      <Places>25</Places>
-      <iMaxPlaces>25</iMaxPlaces>
-      <objStudents />
-    </CourseObjekt>
-    <CourseObjekt>
-      <Name>WPM6</Name>
-      <Lecturer>Prof2</Lecturer>
       <Places>20</Places>
       <iMaxPlaces>20</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>
-      <Name>WPM7</Name>
+      <Name>Change Management - Doy</Name>
+      <Lecturer>Prof2</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Change Management für Führungskräfte - Thumm</Name>
+      <Lecturer>Prof5</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Consulting skills - Osterchrist</Name>
       <Lecturer>Prof7</Lecturer>
-      <Places>35</Places>
-      <iMaxPlaces>35</iMaxPlaces>
+      <Places>20</Places>
+      <iMaxPlaces>20</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>
-      <Name>WPM8</Name>
-      <Lecturer>Prof9</Lecturer>
-      <Places>35</Places>
-      <iMaxPlaces>35</iMaxPlaces>
+      <Name>Creating sustainable competitive advantages - Zellner</Name>
+      <Lecturer>Prof5</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
     <CourseObjekt>
-      <Name>WPM9</Name>
-      <Lecturer>Prof10</Lecturer>
-      <Places>40</Places>
-      <iMaxPlaces>40</iMaxPlaces>
-      <objStudents />
-    </CourseObjekt>
-    <CourseObjekt>
-      <Name>WPM10</Name>
-      <Lecturer>Prof1</Lecturer>
+      <Name>English Hi plus - Meier-Fohrbeck</Name>
+      <Lecturer>Prof2</Lecturer>
       <Places>15</Places>
       <iMaxPlaces>15</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>ERP Basiswissen - Ammane</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Fachsprache Französisch - Kuhn</Name>
+      <Lecturer>Prof9</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Französisch - Kuhn</Name>
+      <Lecturer>Prof10</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Geschäftsprozessmanagement - Puchan</Name>
+      <Lecturer>Prof1</Lecturer>
+      <Places>25</Places>
+      <iMaxPlaces>25</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Green Logistics and Sustainability - Däubel</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>20</Places>
+      <iMaxPlaces>20</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Intercultural Management and Leadership - Rothlauf/Sadowski</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>International Marketing and Global Branding - Döhl/Chlupsa</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>15</Places>
+      <iMaxPlaces>15</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>International Project Management - Walter</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Kontraktlogistik - Fahrenschon</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>18</Places>
+      <iMaxPlaces>18</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Lasertechnik - Hoffmann</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Lean Management und Lean Administration - Gruppe 3, Gierszesky</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>7</Places>
+      <iMaxPlaces>7</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Lean Management und Lean Administration - Gruppe 2, Rieger</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>7</Places>
+      <iMaxPlaces>7</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Lean Management und Lean Administration - Gruppe 1, Spitznagel</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>7</Places>
+      <iMaxPlaces>7</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Lean Six Sigma Foundation - Strunz</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Management across Borders and Cultures - Degenhart</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>15</Places>
+      <iMaxPlaces>15</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Management Decision Making Supported by Data Analysis - Mauerer / Byron</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>16</Places>
+      <iMaxPlaces>16</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Marketing Project - Chlupsa</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Nachhaltiges Wirtschaften - Simon</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Praxis des strategischen Managements - Englberger</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Projektarbeit Automotive Produktentwicklung - Ruppert</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Ressourceneffizienz und Ressourcenmanagement der HM - FK 01</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>10</Places>
+      <iMaxPlaces>10</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Risikomanagement - Krahe/Puchan</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>20</Places>
+      <iMaxPlaces>20</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Simulation Technology with MATLAB/SIMULINK - Stumpp</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>20</Places>
+      <iMaxPlaces>20</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Softskills 1 - Gruppe 1 - Drühe-Wienholt/Dürr/Schober</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>15</Places>
+      <iMaxPlaces>15</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Softskills 1 - Gruppe 2 - Drühe-Wienholt/Dürr/Schober</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>15</Places>
+      <iMaxPlaces>15</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Softwaresysteme der Logistik - Rieger</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>150</Places>
+      <iMaxPlaces>150</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Strategic Planning for Engineers - Blass</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Studentenwettbewerbe Logistik und Produktion - Koether</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Systemergonomie - Brombach</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Unternehmensgründung - Rühlemann</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>30</Places>
+      <iMaxPlaces>30</iMaxPlaces>
+      <objStudents />
+    </CourseObjekt>
+    <CourseObjekt>
+      <Name>Verhandlungsführung und Moderationstechnik - Leppert</Name>
+      <Lecturer>Prof7</Lecturer>
+      <Places>14</Places>
+      <iMaxPlaces>14</iMaxPlaces>
       <objStudents />
     </CourseObjekt>
   </CoursesArray>
