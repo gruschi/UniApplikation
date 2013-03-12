@@ -66,7 +66,8 @@ namespace SetCoursesAlgo.Models
                     if (this.Students[u] != null && this.Students[u].Equals(objStudentArray[i]))
                     {
                         this.Students[u].addPrioritys(objStudentArray[i]);//Setzen der Prioritys das es nicht überschrieben wird
-                        this.Students[u].setChoose(-1, objStudentArray[i].countCourses.ToString(), true);//Setzt Wahl der Course das diese nicht überschrieben werden
+                        objStudentArray[i].setChoose(-1, this.Students[u].countCourses.ToString(), true);//Setzt Wahl der Course das diese nicht überschrieben werden
+                       // this.Students[u].setChoose(-1, objStudentArray[i].countCourses.ToString(), true);//Setzt Wahl der Course das diese nicht überschrieben werden
                         bStudentAdded = true;//Falls der Student nicht vorhanden ist wird er am Ende zur Liste hinzugefügt
                         u = this.Students.Count;//Stop for Loop                      
                     }                   

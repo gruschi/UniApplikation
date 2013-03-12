@@ -34,7 +34,7 @@ namespace SetCoursesAlgo.Models
             int iStudentsIndex = 0;
 
             #region getPriority from PathName
-            string[] tmpPathSplits = sFile.Split('_');
+            string[] tmpPathSplits = sFile.Split(' ');
 
             int priotity = -1;
             bool bCountCourses = false;
@@ -61,6 +61,11 @@ namespace SetCoursesAlgo.Models
                     string sID = (string)(range.Cells[rCnt, 3] as Excel.Range).Value2;
                     string sGroup = (string)(range.Cells[rCnt, 4] as Excel.Range).Value2;
                     string sAnswer = Convert.ToString((range.Cells[rCnt, 5] as Excel.Range).Value2);
+
+                    //Calculation of new ID
+                    if(sID.Length > 30){
+                        sID = sID.Substring(sID.Length - 28, 27);
+                    }
 
                     if (sID == null || sID.Length < 2)
                     {

@@ -54,6 +54,11 @@ namespace SetCoursesAlgo.Models
             {
                 try
                 {
+                    if (sAnswer == "Ohne Antwort")
+                    {
+                        sAnswer = "2";
+                    }
+
                     this.countCourses = Convert.ToInt32(sAnswer);
                     this.maxCourses = Convert.ToInt32(sAnswer);
                 }

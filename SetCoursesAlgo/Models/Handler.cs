@@ -98,12 +98,20 @@ namespace SetCoursesAlgo
 
             foreach(Course tmpCourse in this.objCourseList.Courses){
                 DataTable dtTemp = new DataTable();
-                dtTemp.TableName = tmpCourse.Name;
+
+                foreach (char c in System.IO.Path.GetInvalidFileNameChars())
+                {
+                    tmpCourse.Name = tmpCourse.Name.Replace(c, '_');
+                }
+
+                dtTemp.TableName = tmpCourse.Name;//Tabellenname
+
                 dtTemp.Columns.Add("Platznummer");
-                dtTemp.Columns.Add("Studentenname");//TODO ID ?
+                dtTemp.Columns.Add("Nachname");//TODO ID ?
+                dtTemp.Columns.Add("Vorname");//TODO ID ?
 
                 for(int i = 0; i < tmpCourse.objStudents.Count; i++){
-                    dtTemp.Rows.Add((i + 1), tmpCourse.objStudents[i].Name);
+                    dtTemp.Rows.Add((i + 1), tmpCourse.objStudents[i].Name, tmpCourse.objStudents[i].Surname);
                 }
 
                 dtCoursesOutput.Add(dtTemp);
@@ -151,7 +159,8 @@ namespace SetCoursesAlgo
             DataTable dtReport = new DataTable();
             dtReport.TableName = "Report";
             dtReport.Columns.Add("ID");
-            dtReport.Columns.Add("Student");
+            dtReport.Columns.Add("Nachname");
+            dtReport.Columns.Add("Vorname");
             dtReport.Columns.Add("Wahl 1");
             dtReport.Columns.Add("Wahl 2");
             dtReport.Columns.Add("Wahl 3");
@@ -175,7 +184,7 @@ namespace SetCoursesAlgo
                     }
                 }
 
-                dtReport.Rows.Add(tmpStudent.ID, tmpStudent.Name,
+                dtReport.Rows.Add(tmpStudent.ID, tmpStudent.Name, tmpStudent.Surname,
                                 tmpStudent.getPrio(0),
                                 tmpStudent.getPrio(1),
                                 tmpStudent.getPrio(2),
