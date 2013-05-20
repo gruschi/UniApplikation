@@ -44,10 +44,16 @@ namespace SetCoursesAlgo.Models
             this.Group = Group;            
         }        
 
+        /// <summary>
+        /// Setzt die auswahl des Studenten fest
+        /// </summary>
+        /// <param name="priotity">Priotiätsindex</param>
+        /// <param name="sAnswer">Antwort aus Excel</param>
+        /// <param name="bCountCourses"></param>
         public void setChoose(int priotity, string sAnswer, bool bCountCourses)
         {
             if (priotity > -1)
-            {
+            {             
                 this.Prioritys.Add(new Priority(priotity, sAnswer));
             }
             else

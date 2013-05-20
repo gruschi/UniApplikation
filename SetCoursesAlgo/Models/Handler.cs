@@ -54,7 +54,7 @@ namespace SetCoursesAlgo
                     {
                         Course selectedCourse = this.objCourseList.getCourse(tmpStudent.Prioritys[p].Value);
 
-                        if (selectedCourse.addStudent(tmpStudent))
+                        if (selectedCourse != null && selectedCourse.addStudent(tmpStudent))
                         {
                             tmpStudent.Prioritys[p] = null;
                             --tmpStudent.countCourses;                         

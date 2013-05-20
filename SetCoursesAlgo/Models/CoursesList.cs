@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using SetCoursesAlgo;
+using System.Diagnostics;
 
 namespace SetCoursesAlgo.Models
 {
@@ -16,8 +18,15 @@ namespace SetCoursesAlgo.Models
         [XmlArray("CoursesArray")]
         [XmlArrayItem("CourseObjekt")]
         public List<Course> Courses;
+
+        [XmlIgnore]
+        public Dictionary<string, string> dCourseMerge = new Dictionary<string,string>();   ///Hier werden alle Kursersetzungen gespeichert. Falls ein Name nicht vorkomme
+                                                                                            /// Key = Falscher Name (p), Value = Richtiger Name
+                
         // Konstruktoren
         public CoursesList() { }
+
+       
 
         public CoursesList(string name)
         {         
@@ -67,7 +76,39 @@ namespace SetCoursesAlgo.Models
                 }
             }
 
-            return new Course(p, "UNKNOWN", 1000);
+            if (p != "Ohne Antwort")
+            {
+                //p wird nicht in Coursenamen Gefunden. Daher wird erst in den CourseMerge Listen gesucht
+                if (this.dCourseMerge != null)
+                {
+                    foreach (KeyValuePair<string, string> kvp in this.dCourseMerge)
+                    {
+                        if (kvp.Key == p)
+                        {
+                            return this.getCourse(kvp.Value);
+                        }
+                    }
+                }
+
+                //Antwort falsch geschrieben, daher muss antwort manuell ermittelt werden.
+                var dialog = new SeachCourse(p, this.Courses);
+                var result = dialog.ShowDialog();
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    string srightCourseName = dialog.sReturnCourseRight;//Der Richtige Kursename
+                    this.dCourseMerge.Add(p, srightCourseName);
+
+                    Debugger.Log(1, "CourseName Error", "Coursename: " + p + " missing in Context");
+
+                    return this.getCourse(srightCourseName);
+                }
+
+                throw new Exception("KEIN KURS VORHANDEN!");
+            }
+            else
+            {
+                return null;
+            }
         }
 
         /// <summary>
